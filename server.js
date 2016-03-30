@@ -1,7 +1,7 @@
 // server.js
 
 // modules =================================================
-alert('eeeeeee')
+
 var express			= require('express');
 var mongoose		= require('mongoose');
 var bodyParser		= require('body-parser');
@@ -13,15 +13,15 @@ var router = express.Router();
 
 
 // config files
-//var db = require('./config/db');
+var db = require('./config/db');
 //"mongodb://<user>:<password>@paulo.mongohq.com:10095/mean-on-heroku",
 // set our port
 var port = process.env.PORT || 3000;
 
 // connect to our mongoDB database
-// mongoose.connect(db.url);
+ mongoose.connect(db.url);
 
-mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://david:Roses38100@ds011860.mlab.com:11860/heroku_8dzkshdf');
+//mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://david:Roses38100@ds011800.mlab.com:11800/heroku_7n8chwx1');
 
 // get all data/stuff of the body (POST) parameters
 // parse application/json
