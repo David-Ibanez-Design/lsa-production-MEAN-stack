@@ -1,0 +1,37 @@
+{
+  "name": "LSP",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gruntfile.js",
+  "dependencies": {
+    "body-parser": "*",
+    "express": "^4.13.3",
+    "method-override": "*",
+    "mongoose": "^4.3.1",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer-core": "^5.2.1",
+    "grunt-svgmin": "^3.1.0",
+    "time-grunt": "^1.2.2",
+    "grunt": "*",
+    "grunt-autoprefixer": "*",
+    "grunt-concurrent": "*",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-imagemin": "^1.0.0",
+    "grunt-contrib-requirejs": "^0.4.4",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-grunticon": "^2.2.2",
+    "grunt-newer": "^1.1.1",
+    "grunt-nodemon": "^0.4.1",
+    "grunt-postcss": "*",
+    "grunt-sass": "^1.1.0",
+    "grunt-spritesmith": "*",
+    "grunt-text-replace": "^0.4.0",
+    "load-grunt-tasks": "^3.3.0"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,116 @@
+<!-- 
+liste produts
+add button supprimer
+add bouton ajouter
+ -->
+
+<h2>Tous les produits</h2>
+
+<div class="addprod" ng-click="shownewProd = ! shownewProd">
+  Ajouter un produit
+</div>
+
+<div class="newProd" ng-show="shownewProd">
+  <form no-validate>
+
+    <div class="wrapperFeald">
+      <label>Nom</label>
+      <input type="text" value="" required  ng-model="newProd.nom" id="nom"/>
+    </div>
+
+    <div class="wrapperFeald">
+      <label>Dosage</label>
+      <input type="text" value="" required  ng-model="newProd.dosage" id="dosage"/>
+    </div>
+
+    <div class="wrapperFeald">
+      <label>Principe actif</label>
+      <input type="text" value="" required  ng-model="newProd.principe_actif" id="principe_actif"/>
+    </div>  
+    
+    <div class="wrapperFeald">
+      <label>Forme</label>
+      <input type="text" value="" required  ng-model="newProd.forme" id="forme"/>
+    </div>
+
+    <div class="wrapperFeald">
+      <label>Qty</label>
+      <input type="number" value="" required  ng-model="newProd.qty" id="qty"/>
+    </div>
+
+    <div class="wrapperFeald">
+      <label>Ref</label>
+      <input type="text" value="" required  ng-model="newProd.ref" id="ref"/>
+    </div>
+
+    <div class="wrapperFeald">
+      <label>Prix</label>
+      <input type="number" value="" required  ng-model="newProd.prix" id="prix"/>
+    </div>
+
+    <div class="wrapperFeald">
+      <label>Promo</label>
+      <input type="number" value="" required  ng-model="newProd.promo" id="promo"/>
+    </div>
+
+    <div class="wrapperFeald">
+      <label>Photo</label>
+      <input type="text" value="" required  ng-model="newProd.photo" id="photo"/>
+    </div>
+
+     <div class="wrapperFeald">
+      <label>Forme img</label>
+      <input type="text" value="" required  ng-model="newProd.forme_img" id="forme_img"/>
+    </div>
+
+    <div class="wrapperFeald">
+      <label>Prescription</label>
+      <input type="text" value="" required  ng-model="newProd.prescription" id="prescription"/>
+    </div>
+
+    <div class="wrapperFeald">
+      <label>Qty panier</label>
+      <input type="number" value="0" required  ng-model="newProd.qty_panier" id="qty_panier"/>
+    </div>
+
+    <a href="#" class="btn-creatProd" ng-click="creatProd()">VALIDER</a>
+
+  </form>
+
+</div>
+
+
+ <table class="admin-prod">
+  <tr>
+    <th>Réf</th>
+    <th>Nom</th>
+    <th>Dosage</th>
+    <th>Principe actif</th>
+    <th>Forme</th>
+    <th>Qty</th>
+    <th>Prix</th>
+    <th>Promo</th>
+    <th>Prescription</th>
+    <th>Qty panier</th>
+    <th>Supp</th>
+  </tr>
+  <tr ng-repeat="produit in produits">
+    <td>{{produit.ref}}</td>
+    <td>{{produit.nom}}</td>
+    <td>{{produit.dosage}}</td>
+    <td>{{produit.principe_actif}}</td>
+    <td>{{produit.forme}}</td>
+    <td>{{produit.qty}}</td>
+    <td>{{produit.prix}}</td>
+    <td>{{produit.promo}}</td>
+    <td>{{produit.prescription}}</td>
+    <td>{{produit.qty_panier}}</td>
+    <td><a href="#" ng-click="delProd(produit._id)">Supprimer</a></td>   
+  </tr>
+</table> 
+
+
+
+  </body>
+    <div style='clear:both'></div>
+  </html>

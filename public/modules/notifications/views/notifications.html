@@ -1,0 +1,22 @@
+
+<div class="wrapper_notifications" ng-app="notifications" ng-controller="notificationsCtrl" js-modules>
+
+  <h2 ng-show="!notifications.length" class="listeVide">Aucune notification à afficher</h2>
+
+  <div class="tab-conteneurMessage" ng-repeat="notification in notifications | filter: { nom: '!Information' } | limitTo:-8">
+
+      <div class="tab-entete">
+            <span class="tab-iconNotif icone alignleft"></span>
+            <div class='tab-sousTitre alignleft'>
+              <h3>{{notification.categorie}}</h3>
+              <h4 class="notifPriorite haute">{{notification.priorite}}</h4>
+            </div>
+          <span class="tab-grayNormal alignright ">{{ notification.date | date : 'yyyy-MM-dd'}}</span>
+      </div>
+
+      <p class="tab-massage clearfixDiv">{{notification.message}}</p>
+
+      <hr class="tab-separateur"></hr>
+  </div>
+</div>
+

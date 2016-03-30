@@ -1,0 +1,83 @@
+/* ==|====================
+   Layout/Module/tab
+   ======================= */
+
+/*  -------------------------------- STYLE TAB STRUCTURE ------------------- */
+
+
+// Taille des onglet en fonction de nombre de li (Max 4)
+@for $i from 1 through 4 {
+ .m-tabs li:first-child:nth-last-child(#{$i}),
+ .m-tabs li:first-child:nth-last-child(#{$i}) ~ li {
+    width: 100% / $i }
+} 
+
+
+.m-tabs {
+   width:percentage(($block-infos)/$graph);
+   background:white;
+   float:left;
+   height: 449px;
+   overflow: hidden;
+   margin-top:$margin;
+
+   @include desktop {width:46%;margin-bottom:25px;}
+
+  
+	ul{
+
+		height:48px;
+
+
+
+		  	li 	{
+
+
+		  			box-shadow:inset 0px 0px 0px 1px #fff;
+				    float: left;
+				    display: block;	    
+				    text-align: left;
+				    // border: 1px solid white;
+					line-height:48px;
+					cursor: pointer;
+					background: $color-tab;
+					@include transition(all 0.2s ease-in-out);
+					&:hover {background: darken($color-tab, 10);}	
+					h2{color:$gray;}
+
+				    &.active{
+						 &:hover {background: inherit !important;}	
+						 h2{color:$black;}	
+						 background:white;
+
+				    }
+
+				    h2{
+				    	 text-transform: capitalize;
+				    }	
+
+					  
+		 		 }
+
+
+			}
+
+	.tab-conteneurMessage{
+		padding-left:30px;
+		padding-right:30px;
+		padding-top: 20px;
+	}
+
+}
+
+.panels-last section{
+  	  margin-left:percentage($margin/$graph);
+  	  @include tablet { margin-left:0px;} 
+}
+
+
+
+
+
+
+

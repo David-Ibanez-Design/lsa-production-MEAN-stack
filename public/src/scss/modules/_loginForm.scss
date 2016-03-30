@@ -1,0 +1,148 @@
+/* ==|====================
+   Layout/Module/loginFrom
+   ======================= */
+
+.m-login{@include centre(both);
+
+
+.credentalsHint{
+	margin: 0 auto 30px;
+	background: rgba(68, 154, 215, 0.06);
+	padding: 15px;
+	text-align: center;
+	width: 300px;
+	border: 1px solid rgba(0, 0, 0, 0.13);
+
+
+	p{
+		font-size: 13px;
+		margin-bottom: 10px;
+		color:$blue;
+
+			&:last-child{
+		margin-bottom: 0px !important;
+	}
+
+	}
+}
+
+/* --------------- Logo -------------------------- */
+
+	.login-logoWrapper{
+		background:url(../img/loginLogoBg.png);
+		height:222px;
+		width:222px;
+		margin: 0 auto 40px;
+		position:relative;
+	}
+
+	.m-logoLogin{@include centre(both);
+
+		.logo-iconeLogo{
+			margin: 0 auto 10px;
+			width:94px;
+			font-size: 70px;
+		}
+
+		.logo_titre{text-align: center;font-size: 18px;}
+	}
+
+	.loginForm{
+/* --------------- Champs -------------------------- */
+
+			.login-formFildWrapper{
+				width:300px;
+				height:39px;
+				float: left;
+				margin-right:10px;
+				position:relative;
+				&:last-of-type{margin-right:0;}
+				@include desktop { float: none;margin-bottom:10px;margin-right:0px;}
+
+					.loginNom, .loginPass{
+						height:100%;
+						border:1px solid #364754;
+						color:white;
+						padding-left: 35px;
+						line-height:39px;
+						background:none;
+						width:259px;
+					}
+
+					input[type="text"],input[type="password"] {
+						 // @include input-placeholder {
+							//   color: #c8f4e4;
+							//   font-size: 12px;
+							//   font-family:$fontNormal;
+						 // }
+					}
+			}
+
+
+			.SubmitFiledWrapper{
+				width:48px;
+				height:41px;
+				position:relative;
+				background:$yellow;
+				@include transition(all 0.2s ease-in-out);
+				&:hover{background:white;}
+				@include desktop {float:none;width:100%;}
+
+					.submit{
+						border:none;
+						background:transparent;
+						width:99%;
+						height:41px;
+						padding:0;
+						position: relative;
+    					z-index: 2;
+
+					}
+			}
+
+
+/* --------------- Icones -------------------------- */
+
+		.login-iconeIdentifiant{@include icon( "before", user);}
+
+		.login-iconePass{@include icon( "before", lock);}
+
+		.login-iconeSubmit{@include icon( "before", connection);z-index: 2;}
+
+		.login-iconeIdentifiant, .login-iconePass{
+			line-height:39px;
+			font-size:16px;
+			color:#c8f4e4;
+			@include position(absolute,0px 0  0 12px);
+		}
+
+		.login-iconeSubmit{
+			@include centre(both);
+			font-size: 21px;
+			color:black;
+			height:22px;
+		}
+
+/* --------------- Message -------------------------- */
+
+
+	}
+		.login-forget{
+			font-size: 13px;
+			font-style: italic;
+			padding-top: 20px;
+			text-align: center;
+			clear: both;
+			color:#51686f;
+		}
+
+
+
+		.error-message{
+			@extend .login-forget;
+			color:$light-red;
+			@include centre(x);
+			top:63%;
+		}
+
+}

@@ -1,0 +1,41 @@
+/* ===========================
+   Base
+   =========================== */
+
+
+@mixin desktop {
+	@media only screen and (max-width: 1300px) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media only screen and  (max-width: 1021px) {
+		@content;
+	}
+}
+
+@mixin phone {
+	@media only screen and (max-width: 761px) {
+		@content;
+	}
+}
+
+
+@mixin x-tablet {
+	@media only screen and (max-width: 1850px) {
+		@content;
+	}
+}
+
+@mixin s-tablet {
+	@media only screen and (max-width: 1406px) {
+		@content;
+	}
+}
+
+@mixin xs-tablet {
+	@media only screen and (max-width: 1320px) {
+		@content;
+	}
+}

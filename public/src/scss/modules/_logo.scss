@@ -1,0 +1,32 @@
+/* ==|====================
+   Layout/Module/logo
+   ======================= */
+
+.m-logo{
+	background:url("../img/fond_logo.png");
+	height: 107px;
+    width: 100%;   
+    text-align: center;
+
+        @include tablet { width:100px;height:60px;float:left;}
+}
+
+.logo-iconeLogo{
+	@include icon( "before", logo);
+	color: white;
+    display: block;
+    font-size: 4em;
+    line-height: 64px;
+    padding-top: 16px;
+
+        @include tablet {  padding-top: 0px;font-size: 3em;line-height: 57px;}
+}
+
+.logo_titre{
+	color: white;
+    font-size: 93%;
+    letter-spacing: 3px;
+    margin-top: -14px;
+
+        @include tablet {  margin-top: -17px;}    
+}

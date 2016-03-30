@@ -1,0 +1,109 @@
+/* ==|====================
+   Layout/Module/formPassOublie
+   ======================= */
+
+.m-popupMdp{
+	@include centre(both);
+	top:60%;
+	height:300px;
+	width:500px;
+	background:url(../img/bgOublie.png);
+	z-index:4;
+	display:none;
+
+	.popupMdp-btnClose{
+		position:absolute;
+		right:30px;
+		top:0;
+		border:1px solid #364754;
+		border-top:none;
+		width:50px;
+		height:45px;
+		cursor: pointer;
+		&:hover{border:none;background:$yellow;}
+		&:hover .popupMdp-iconeClose{color:$black;}
+	}
+
+	.popupMdp-iconeClose{
+		@include icon( "before", croix);
+		@include centre(both);
+		font-size: 13px;
+		color:#c8f4e4;
+	}
+
+
+
+	.popupMdp-text{
+		font-size: 16px;
+		text-align: center;
+		clear: both;
+		color:white;
+		padding-left: 0 !important;
+		width:300px;
+		margin:0 auto;
+	}
+
+	.popupMdp-form{
+		@include centre(both);
+	}
+
+	.popupMdp-formFildWrapper{
+		width:300px;
+		height:39px;
+		margin:20px auto;
+		position:relative;
+		@include desktop { float: none;margin-bottom:10px;margin-right:0px;} 
+	}
+
+	.popupMdp-iconeMail{
+		@include icon( "before", email);
+		line-height:39px;
+		font-size:16px;
+		color:#c8f4e4;
+		@include position(absolute,0px 0  0 12px);
+	}
+
+	.popupMdpMail{
+		height:100%;
+		border:1px solid #364754;
+		color:white;
+		padding-left: 35px;
+		line-height:39px;
+		background:none;
+		width:262px;
+	}
+
+	 // @include input-placeholder {
+		//   color: #c8f4e4;
+		//   font-size: 12px;
+		//   font-family:$fontNormal;
+	 // }
+
+	.SubmitFiledWrapper{
+		height:41px;
+		position:relative;
+		background:$yellow;
+		float:none;
+		width:300px;
+		margin:15px auto 0;
+		&:hover{background:white;}
+	}
+
+
+	.popupMdp-submit{
+		border:none;
+		background:transparent;
+		width:99%;
+		height:41px;
+		padding:0;
+
+
+	}
+
+	.error-message{
+		@extend .login-forget;
+		color:$light-red;
+		text-align: center;
+		margin-top:20px;
+	}
+}

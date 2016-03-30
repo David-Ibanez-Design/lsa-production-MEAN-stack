@@ -1,0 +1,176 @@
+/* ==|====================
+   Layout/Module/adminPage
+   ======================= */
+
+.newProd{
+  form{
+    width: 96%;
+    padding: 10px;
+    margin:0 auto;
+
+      .wrapperFeald{
+        margin-bottom: 5px;
+        float: left;
+        margin-right: 10px;
+         label{
+          display: block;
+         }
+      }
+
+      .btn-creatProd{
+        clear: both;
+        display: block;
+        margin: 16px auto;
+        width: 100px;
+      }
+  }
+}
+
+
+.admin-prod{
+  width: 100%;
+
+  th{
+    text-align: center;
+    font-style: bold;
+    color:#dedede;
+    background: grey;
+    font-size: 11px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+
+  tr{
+    height: 40px;
+    text-align: center;
+    font-size: 14px;
+    border-bottom: 1px solid #DAD9D9;
+  }
+}
+
+.addprod{
+  border:1px solid black;
+  padding: 10px;
+  width: 140px;
+  margin-bottom: 20px;
+  margin:0 auto 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+.admin-menu{
+  width: 520px;
+  margin: 10px auto 30px;
+
+  li{
+    float: left;
+    a{
+      color:white;
+      text-transform: uppercase;
+      font-size: 20px;
+      padding: 20px;
+      &:hover{color:red;}
+    }
+  }
+
+}
+
+.titireAdminPage{
+  padding:10px;
+}
+
+.container{
+  width: 1000px;
+  margin:0 auto;
+  height: 100%;
+  clear: both;
+  padding-top: 50px;
+}
+
+.content-admin{
+  background: white;
+  height: 3000px;
+
+  .wrapper-content-admin{
+    width: 80%;
+    margin: 20px auto;
+
+    input{
+        margin-right: 5px;  
+    }
+
+
+      h2{
+        padding-left: 0 !important;
+        margin-top: 30px;
+        clear: both;
+      }
+
+      .commande-choice{
+        padding-left: 10px;
+        padding-top: 10px;
+      }
+  }
+
+  .lister_clients{
+    float: left;
+    width: 43%;
+    padding:20px; 
+    border:1px solid black;
+
+     &:first-child{
+        margin-right: 20px;
+     }
+  }
+
+
+  .commande-details{
+    padding: 10px;
+
+        .statue_com{
+          float: left;
+        }
+        select{
+          float: right;
+        }
+  }
+
+
+  .productListAdmin{
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .btn-apply{
+    text-transform: uppercase;
+    width: 100px;
+    margin: 41px auto;
+    cursor: pointer;
+    border: 1px solid black;
+    padding: 10px;
+    clear: both;
+    text-align: center;
+  }
+
+}
+
+.icon-plus{
+  height: 16px;
+  width: 16px;
+  background:url('../img/icon-plus.png');
+  margin-right: 5px;
+  display: block;
+  float: left;
+}
+
+.lineSeparator{
+  width: 90%;
+  height: 1px;
+  background: grey;
+  margin: 5px auto 5px;
+}

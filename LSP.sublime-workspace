@@ -1,0 +1,1045 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"hi",
+				"height"
+			],
+			[
+				"m",
+				"margin"
+			],
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"prod",
+				"produits"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"ng-",
+				"ng-controller"
+			],
+			[
+				"over",
+				"overflow"
+			],
+			[
+				"t-e",
+				"t-esc"
+			],
+			[
+				"t",
+				"t-value"
+			],
+			[
+				"t-",
+				"t-set"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"light",
+				"light-orange	 _nav.scss"
+			],
+			[
+				"light-",
+				"light-grey	 _header.scss"
+			],
+			[
+				"ng-c",
+				"ng-click	AngularJS"
+			],
+			[
+				"border",
+				"border-top"
+			],
+			[
+				"prou",
+				"products"
+			],
+			[
+				"i",
+				"italic"
+			],
+			[
+				"font-s",
+				"font-style"
+			],
+			[
+				"com",
+				"commandes"
+			],
+			[
+				"qty",
+				"qty_panier"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"$s",
+				"$scope	AngularJS"
+			],
+			[
+				"ng-re",
+				"ng-repeat	AngularJS"
+			],
+			[
+				"public",
+				"public-routes.js"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"notfica",
+				"notifications"
+			],
+			[
+				"contr",
+				"controller	AngularJS"
+			],
+			[
+				"co",
+				"components"
+			],
+			[
+				"dis",
+				"displaySucess"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"sr",
+				"script	Tag"
+			],
+			[
+				"scroll",
+				"scrollBar"
+			],
+			[
+				"ve",
+				"vendors/"
+			],
+			[
+				"w",
+				"window"
+			],
+			[
+				"di",
+				"diamonds"
+			],
+			[
+				"pro",
+				"profile"
+			],
+			[
+				"e",
+				"$el〔variable〕"
+			],
+			[
+				"bor",
+				"border-width"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"cu",
+				"cur	cursor: ${pointer};"
+			],
+			[
+				"tra",
+				"transform"
+			],
+			[
+				"cl",
+				"clear"
+			],
+			[
+				"pa",
+				"padding-top"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"back",
+				"backgroundColor"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"icon-c",
+				"icon-close	 icons.fallback.css"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"tr",
+				"transform-origin"
+			],
+			[
+				"b",
+				"block"
+			],
+			[
+				"in",
+				"inherit"
+			],
+			[
+				"tex-",
+				"text-indent"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"tex",
+				"text-transform"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"box-",
+				"box-shadow"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"p",
+				"padding"
+			],
+			[
+				"cen",
+				"center-axis($axis: \"both\", $posTop: 50%)	 _mixins.scss"
+			],
+			[
+				"t-s",
+				"t-esc"
+			],
+			[
+				"o",
+				"opacity"
+			],
+			[
+				"ra",
+				"ratio"
+			],
+			[
+				"bp",
+				"background-position"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"wb",
+				"website"
+			],
+			[
+				"me",
+				"medecins"
+			],
+			[
+				"pha",
+				"pharmaciens"
+			],
+			[
+				"off",
+				"offset〔function〕"
+			],
+			[
+				"remo",
+				"removeClass"
+			],
+			[
+				"has",
+				"hasClass〔function〕"
+			],
+			[
+				"add",
+				"addClass〔function〕"
+			],
+			[
+				"el",
+				"element"
+			],
+			[
+				"fa",
+				"fadeOut〔function〕"
+			],
+			[
+				"M",
+				"Medecins"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"wi",
+				"window"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"win",
+				"window_with"
+			],
+			[
+				"blue",
+				"blue--dark	 _states.scss"
+			],
+			[
+				"grild-ap",
+				"grild-apropos-r	 _grid.scss"
+			],
+			[
+				"grey",
+				"grey--x-dark	 _config.scss"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"font-family--pr",
+				"font-family--primary-regular	 _nav.scss"
+			],
+			[
+				"para",
+				"para__medium	 style.css"
+			],
+			[
+				"gree",
+				"green--light	 _config.scss"
+			],
+			[
+				"gey",
+				"grey--light	 _config.scss"
+			],
+			[
+				"side",
+				"_sideBarNewProducts.scss"
+			],
+			[
+				"ac",
+				"active	 style.css"
+			],
+			[
+				"tabe-",
+				"table-cell"
+			],
+			[
+				"f",
+				"font-family--regular	 _extends.scss"
+			],
+			[
+				"bule-",
+				"blue--xlight	 _wrappers.scss"
+			],
+			[
+				"font-family--primary",
+				"font-family--primary--regular	 _main.scss"
+			],
+			[
+				"font-family--p",
+				"font-family--primary--regular	 _main.scss"
+			],
+			[
+				"font-fami",
+				"font-family--primary--regular	 _contactForm.scss"
+			],
+			[
+				"page",
+				"page-header.php"
+			],
+			[
+				"l",
+				"$lang〔variable〕"
+			],
+			[
+				"g",
+				"grey	 _contactForm.scss"
+			],
+			[
+				"bg",
+				"bg-contact.jpg	w:818 h:601"
+			],
+			[
+				"fon",
+				"font-weight--medium	 _nav.scss"
+			],
+			[
+				"pading",
+				"padding-top"
+			],
+			[
+				"para__",
+				"para__medium"
+			],
+			[
+				"s",
+				"src/"
+			],
+			[
+				"child",
+				"children〔function〕"
+			],
+			[
+				"fs",
+				"fs	font-style: ${italic};"
+			],
+			[
+				"tt",
+				"tt-n	text-transform: none;"
+			],
+			[
+				"fl",
+				"fl-r	float: right;"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"po",
+				"pos-r	position: relative;"
+			],
+			[
+				"bl",
+				"blue	 _btn.scss"
+			],
+			[
+				"tranf",
+				"transform"
+			],
+			[
+				"link-hover",
+				"link-hover	 style.css"
+			],
+			[
+				"bo",
+				"border-top"
+			],
+			[
+				"first",
+				"first-child	 pseudo selector"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"bu",
+				"blue--light	 _textes.scss"
+			],
+			[
+				"boe",
+				"border-left"
+			],
+			[
+				"cp",
+				"cur-p	cursor: pointer;"
+			],
+			[
+				"blue--",
+				"blue--dark	 _wrappers.scss"
+			],
+			[
+				"hdl",
+				"hdl__xlarge"
+			],
+			[
+				"vi",
+				"vivamine-pre.jpg	w:375 h:260"
+			],
+			[
+				"font-w",
+				"font-weight--light	 _base.scss"
+			],
+			[
+				"pra",
+				"para	 _textes.scss"
+			],
+			[
+				"padding",
+				"padding-left"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"last_filter": "Package Control: re",
+		"selected_items":
+		[
+			[
+				"Package Control: re",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: list",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"w",
+				"W3C Validators: Validate HTML5"
+			],
+			[
+				"css",
+				"CSS Completions: Prune Cache"
+			],
+			[
+				"w3",
+				"W3C Validators: Validate HTML5"
+			],
+			[
+				"w3c",
+				"W3C Validators: Validate HTML5"
+			],
+			[
+				"",
+				"CSS Completions: Prune Cache"
+			],
+			[
+				"Pa",
+				"Project: Add Folder"
+			],
+			[
+				"Package Controlre",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Disable Package"
+			],
+			[
+				"git",
+				"Git: Status"
+			],
+			[
+				"Package Contins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 536.0
+	},
+	"console":
+	{
+		"height": 208.0,
+		"history":
+		[
+			"ignored",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/app/wamp/www/LSP/app",
+		"/D/app/wamp/www/LSP/app/routes",
+		"/D/app/wamp/www/LSP/public",
+		"/D/app/wamp/www/LSP/public/modules",
+		"/D/app/wamp/www/LSP/public/modules/avoirs",
+		"/D/app/wamp/www/LSP/public/modules/avoirs/views",
+		"/D/app/wamp/www/LSP/public/modules/clients",
+		"/D/app/wamp/www/LSP/public/modules/commandes",
+		"/D/app/wamp/www/LSP/public/modules/commandes/views",
+		"/D/app/wamp/www/LSP/public/modules/details_popup",
+		"/D/app/wamp/www/LSP/public/modules/details_popup/view",
+		"/D/app/wamp/www/LSP/public/modules/factures",
+		"/D/app/wamp/www/LSP/public/modules/factures/views",
+		"/D/app/wamp/www/LSP/public/modules/historiques",
+		"/D/app/wamp/www/LSP/public/modules/historiques/views",
+		"/D/app/wamp/www/LSP/public/modules/menu",
+		"/D/app/wamp/www/LSP/public/modules/menu/view",
+		"/D/app/wamp/www/LSP/public/pages",
+		"/D/app/wamp/www/LSP/public/src",
+		"/D/app/wamp/www/LSP/public/src/js",
+		"/D/app/wamp/www/LSP/public/src/scss",
+		"/D/app/wamp/www/LSP/public/src/scss/base",
+		"/D/app/wamp/www/LSP/public/src/scss/layout"
+	],
+	"file_history":
+	[
+		"/C/Users/David/AppData/Local/Temp/scp48957/opt/odoo/custom/addons/lsaee-theme/static/js/effect.js",
+		"/D/app/wamp/www/LSP/public/src/scss/tools/_media_queries.scss",
+		"/D/app/wamp/www/LSP/public/src/scss/modules/_panier.scss",
+		"/D/app/wamp/www/LSP/public/src/scss/base/_base.scss",
+		"/D/app/wamp/www/LSP/public/src/scss/modules/_graph.scss",
+		"/D/app/wamp/www/LSP/public/pages/dashboard.html",
+		"/D/app/wamp/www/LSP/public/src/scss/modules/_promotion.scss",
+		"/D/app/wamp/www/LSP/public/src/scss/layout/_main.scss",
+		"/D/app/wamp/www/LSP/public/src/js/fonctions.js",
+		"/D/app/wamp/www/LSP/public/src/scss/tools/_functions.scss",
+		"/D/app/wamp/www/LSP/public/src/scss/modules/_logo.scss",
+		"/D/app/wamp/www/LSP/public/modules/menu/view/menu.html",
+		"/D/app/wamp/www/LSP/public/src/scss/modules/_listeProduit.scss",
+		"/D/app/wamp/www/LSP/public/src/scss/modules/_ongletTab.scss",
+		"/D/app/wamp/www/LSP/public/modules/commandes/views/commandes.html",
+		"/D/app/wamp/www/LSP/public/modules/commandes/service.js",
+		"/D/app/wamp/www/LSP/public/modules/commandes/controller.js",
+		"/D/app/wamp/www/LSP/app/routes/commandes.js",
+		"/D/app/wamp/www/LSP/public/modules/notifications/controller.js",
+		"/D/app/wamp/www/LSP/public/pages/monCompte.html",
+		"/D/app/wamp/www/LSP/public/src/scss/tools/_site-settings.scss",
+		"/D/app/wamp/www/LSP/app/routes/produits.js",
+		"/D/app/wamp/www/LSP/app/routes/notifications.js",
+		"/D/app/wamp/www/LSP/app/routes/panier.js",
+		"/D/app/wamp/www/LSP/gruntfile.js",
+		"/D/app/wamp/www/LSP/public/pages/commander.html",
+		"/D/app/wamp/www/LSP/public/modules/historiques/views/historiques.html",
+		"/D/app/wamp/www/LSP/public/modules/clients/controller.js",
+		"/D/app/wamp/www/LSP/public/modules/details_popup/view/popUpInfoSupOrder.html",
+		"/D/app/wamp/www/LSP/public/src/scss/modules/_tableaux.scss",
+		"/D/app/wamp/www/LSP/public/app/directives.js",
+		"/D/app/wamp/www/LSP/public/modules/factures/controller.js",
+		"/D/app/wamp/www/LSP/public/modules/avoirs/views/avoirs.html",
+		"/D/app/wamp/www/LSP/public/modules/avoirs/controller.js",
+		"/D/app/wamp/www/LSP/public/modules/avoirs/service.js",
+		"/D/app/wamp/www/LSP/public/modules/factures/views/factures.html",
+		"/D/app/wamp/www/LSP/public/modules/panier/controller.js",
+		"/D/app/wamp/www/LSP/public/modules/notifications/service.js",
+		"/D/app/wamp/www/LSP/public/index.html",
+		"/D/app/wamp/www/LSP/app/models/notifications.js",
+		"/D/app/wamp/www/LSP/app/models/clients.js",
+		"/C/Users/David/AppData/Local/Temp/scp20589/opt/odoo/custom/addons/lsaee-theme/controllers/main.py",
+		"/C/Users/David/AppData/Local/Temp/scp41991/opt/odoo/custom/addons/LSA/LSA-website/controllers/main.py",
+		"/C/Users/David/AppData/Local/Temp/scp15601/opt/odoo/custom/addons/dz-art/dz-art-website/controllers/main.py",
+		"/C/Users/David/AppData/Local/Temp/main.py",
+		"/D/app/wamp/www/LSP/public/src/scss/modules/_ficheClient.scss",
+		"/D/app/wamp/www/LSP/public/modules/notifications/views/notifications.html",
+		"/D/app/wamp/www/LSP/public/src/css/style.css",
+		"/D/app/wamp/www/LSP/public/src/js/map.js",
+		"/D/app/wamp/www/LSP/public/src/scss/modules/_monCompte.scss",
+		"/D/app/wamp/www/LSP/public/src/scss/modules/_menu.scss",
+		"/D/app/wamp/www/LSP/public/modules/messages/views/messages.html",
+		"/D/app/wamp/www/LSP/public/pages/contact.html",
+		"/D/app/wamp/www/LSP/public/modules/details_popup/view/popUpInfoSupFac.html",
+		"/D/app/wamp/www/LSP/public/modules/details_popup/view/popUpInfoSupAvoir.html",
+		"/D/app/wamp/www/LSP/public/modules/details_popup/view/popUpInfoSup.html",
+		"/D/app/wamp/www/orangina/src/js/effect.js",
+		"/D/app/wamp/www/LSP/public/app/routes.js",
+		"/D/app/wamp/www/LSP-sass-version/monCompte.php",
+		"/D/app/wamp/www/LSP/public/src/scss/modules/_notifications.scss",
+		"/D/app/wamp/www/LSP/public/modules/panel/directive.js",
+		"/D/app/wamp/www/LSP/public/modules/panel/views/panel.html",
+		"/D/app/wamp/www/LSP/public/modules/panel/controller.js",
+		"/D/app/wamp/www/LSP/public/modules/menu/controller.js",
+		"/D/app/wamp/www/LSP/public/app/app.js",
+		"/D/app/wamp/www/LSP/public/partials/menu.html",
+		"/D/app/wamp/www/LSP/public/partials/dashboard.html",
+		"/D/app/wamp/www/LSP/public/partials/adminPanel/menu.html",
+		"/D/app/wamp/www/LSP/public/modules/clients/service.js",
+		"/D/app/wamp/www/LSP/public/modules/panel/controllers.js",
+		"/D/app/wamp/www/LSP/public/modules/historiques/controller.js",
+		"/D/app/wamp/www/LSP/public/modules/historiques/service.js",
+		"/D/app/wamp/www/LSP/public/app/services/clients.js",
+		"/D/app/wamp/www/LSP/public/modules/login/service.js",
+		"/D/app/wamp/www/LSP/public/app/services/stocks.js",
+		"/D/app/wamp/www/LSP/public/modules/stocks/service.js",
+		"/D/app/wamp/www/LSP/public/modules/stocks/controller.js",
+		"/D/app/wamp/www/LSP/public/modules/produits/controller.js",
+		"/D/app/wamp/www/LSP/public/modules/produits/service.js",
+		"/D/app/wamp/www/LSP/public/app/services/products.js",
+		"/D/app/wamp/www/LSP/public/modules/panier/service.js",
+		"/D/app/wamp/www/LSP/public/app/services/panier.js",
+		"/D/app/wamp/www/LSP/public/app/services/notifications.js",
+		"/D/app/wamp/www/LSP/public/app/services/login.js",
+		"/D/app/wamp/www/LSP/public/modules/login/controller.js",
+		"/D/app/wamp/www/LSP/public/modules/factures/service.js",
+		"/D/app/wamp/www/LSP/public/app/services/factures.js",
+		"/D/app/wamp/www/LSP/public/app/services/commandes.js",
+		"/D/app/wamp/www/LSP/public/app/services/avoirs.js",
+		"/D/app/wamp/www/LSP/public/partials/adminPanel/adminCtrl.js",
+		"/D/app/wamp/www/LSP/public/partials/monCompte.html",
+		"/D/app/wamp/www/LSP/app/routes/clients.js",
+		"/D/app/wamp/www/LSP/public/partials/commander.html",
+		"/D/app/wamp/www/LSP/public/app/services/clients_infos.js",
+		"/D/app/wamp/www/LSP/public/app/services/clientsHistoriques.js",
+		"/D/app/wamp/www/LSP/public/modules/stocks/views/stocks.html",
+		"/D/app/wamp/www/LSP/public/partials/controllers.js",
+		"/D/app/wamp/www/LSP/public/modules/login/views/login.html",
+		"/D/app/wamp/www/LSP/app/routes/user-login.js",
+		"/D/app/wamp/www/LSP/public/src/scss/modules/_loginForm.scss",
+		"/D/app/wamp/www/LSP/public/modules/login/login.js",
+		"/D/app/wamp/www/LSP-sass-version/js/fonctions.js",
+		"/D/app/wamp/www/LSP-sass-version/login.php",
+		"/D/app/wamp/www/LSP/public/modules/details_popup/view/popUpLogin.html",
+		"/D/app/wamp/www/LSP/public/src/js/lib/angular-ressources.js",
+		"/D/app/wamp/www/LSP/public/src/js/lib/angular-1.3.13.js",
+		"/D/app/wamp/www/LSP/public/src/js/lib/angular.js",
+		"/D/app/wamp/www/LSP/public/partials/contact.html",
+		"/D/app/wamp/www/LSP/public/src/js/contact.js",
+		"/D/app/wamp/www/LSP/app/routes/factures.js",
+		"/D/app/wamp/www/LSP/public/app/directives/directives.js",
+		"/D/app/wamp/www/LSP/public/app/directives/test.js",
+		"/D/app/wamp/www/LSP/app/routes/stocks.js",
+		"/D/app/wamp/www/LSP/app/models/stocks.js",
+		"/D/app/wamp/www/LSP/app/routes/avoirs.js",
+		"/D/app/wamp/www/LSP/app/models/factures.js",
+		"/D/app/wamp/www/LSP/public/src/js/lib/js.cookie.js",
+		"/C/Users/David/AppData/Local/Temp/scp31099/opt/odoo/custom/addons/dz-art/dz-art-website/static/scss/layout/_wrappers.scss",
+		"/C/Users/David/AppData/Local/Temp/scp43696/opt/odoo/custom/addons/dz-art/dz-art-website/views/pages/produit.xml",
+		"/C/Users/David/AppData/Local/Temp/scp40768/opt/odoo/custom/addons/dz-art/dz-art-website/static/scss/modules/_listeProducts.scss",
+		"/C/Users/David/AppData/Local/Temp/scp35783/opt/odoo/custom/addons/dz-art/dz-art-website/static/scss/modules/_sideBarCats.scss",
+		"/C/Users/David/AppData/Local/Temp/scp35483/opt/odoo/custom/addons/dz-art/dz-art-website/views/templates.xml",
+		"/C/Users/David/AppData/Local/Temp/scp30359/opt/odoo/custom/addons/dz-art/dz-art-website/views/pages/boutique.xml",
+		"/C/Users/David/AppData/Local/Temp/scp12170/opt/odoo/custom/addons/LSA/LSA-website/static/scss/layout/_wrappers.scss",
+		"/C/Users/David/AppData/Local/Temp/scp42687/opt/odoo/custom/addons/dz-art/dz-art-website/static/scss/modules/_ficheProducts.scss",
+		"/D/app/wamp/www/LSP/public/partials/adminPanel/commandes.html",
+		"/D/app/wamp/www/LSP/public/app/services/detailsTab.js",
+		"/D/app/wamp/www/LSP/public/src/js/graph.js"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+			"D:\\app\\wamp\\www\\LSP",
+			"D:\\app\\wamp\\www\\LSP\\public",
+			"D:\\app\\wamp\\www\\LSP",
+			"<open files>",
+			"-*node_modules",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"m-promotion",
+			"promo-imageProduit",
+			"compte-nom",
+			"alert",
+			"googleMap",
+			"tab-entete",
+			"notifPriorite",
+			"margLeft",
+			"menu-actif",
+			"partials",
+			"module",
+			"controllers",
+			"cartService",
+			"clientInfoCtrl",
+			"commandes",
+			"clientInfoCtrl\n",
+			"\">\n",
+			"clientInfoCtrl",
+			"creatAvoir",
+			"AvoirStatue",
+			"FactureStatue",
+			"commandeStatue",
+			"addProd",
+			"NewProd",
+			"PanierUpdate",
+			"getClientInfos",
+			"creatOrder",
+			"message",
+			"error",
+			"details",
+			"map",
+			"Clientcommandes/:id",
+			"creatOrder",
+			"addcommande-invoice",
+			"commandeClient",
+			"ClientGetOnecommandes",
+			"Clientcommandes",
+			"addNotifications",
+			"PanierUpdate",
+			"add-to-panier",
+			"commandeClient",
+			"openElement",
+			"produits",
+			"value",
+			"$cookieS",
+			"$cookieStore",
+			"phone",
+			"developpement",
+			"list_metiers",
+			"developpement",
+			"wrapper-prod",
+			".prod-img",
+			"h4",
+			"developpement",
+			"metiers",
+			"footer",
+			"contactus",
+			"kwargs",
+			"header",
+			"a",
+			"developpement",
+			"</li>",
+			"img",
+			"popupMdp",
+			"tabVoir",
+			"',['']",
+			"before",
+			"icons",
+			"email",
+			"dev",
+			"icon",
+			"console",
+			"centre_de_notifications",
+			"span",
+			"blue",
+			"orange",
+			"menu",
+			"seach",
+			"logo",
+			"dz-art",
+			"html",
+			"header",
+			"tab-iconVoir",
+			"lan",
+			"checkout_values",
+			"confirmation",
+			"checkout",
+			"message",
+			"myListService",
+			"container",
+			"footer_container",
+			"test",
+			"New_Registration",
+			"id",
+			"td",
+			"listeProduit",
+			">\n",
+			"Details",
+			"details_colisage_qweb",
+			"style.css",
+			"style",
+			"internal_layout",
+			"report",
+			"commandeController",
+			"commandes",
+			"ProductList",
+			"validate",
+			"btn-confirmer-commande",
+			"transfer",
+			"payment",
+			"total",
+			"payment",
+			"cart",
+			"wrapper-panier-header",
+			"header",
+			"top-header",
+			"top",
+			"border",
+			"wrapper-nav-header",
+			".wrapper-logo",
+			"addresse",
+			"removeProd",
+			"panier-tabQte",
+			"$scope.qty",
+			"ProductList",
+			"dot",
+			"img",
+			"tous"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"menu_actif",
+			"dz-art-website",
+			"../src/img/",
+			"tragetWrapper",
+			"src/",
+			"dist/",
+			"/lsaee-theme/static/img/",
+			"/expert-consulting-theme/static/img/",
+			"#017b52",
+			"#15181d",
+			"../../img/mCSB_buttons"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 32.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.CSS Extended Completions":
+	{
+		"height": 0.0
+	},
+	"output.MongoExec.errors":
+	{
+		"height": 96.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "LSP.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 358.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

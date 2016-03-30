@@ -1,0 +1,24 @@
+  <h2 class="titireAdminPage">Tout les clients</h2>
+
+  <div class="wrapper-content-admin" ng-init="documentTYpe='avoir'">
+
+    <div class="lister_clients" ng-repeat="client in clients">
+      <input ng-click="showFactures = ! showFactures" type="checkbox" name="clients" value="{{client.nom}}">{{client.nom}}<br>
+
+      <div class="commande-choice" ng-repeat="avoir in client.avoirs" ng-show="showFactures">
+
+        <input type="checkbox" ng-click="showFacturesDetails = ! showFacturesDetails" name="factures" value="{{avoir.num_commande}}">{{avoir.num_commande}}<br>
+        <div class="commande-details" ng-show="showFacturesDetails">
+           <p class="statue_com">{{avoir.statue}}</p>
+           <select ng-model="selectedStatue" ng-options="statue.avoir for statue in avoirsStatue" class="selectStatue"></select>       
+          <div class="btn-apply" ng-click="changeStatue(selectedStatue.avoir, avoir.statue, avoir._id, client._id, documentTYpe)">Apply changes</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  </body>
+    <div style='clear:both'></div>
+  </html>

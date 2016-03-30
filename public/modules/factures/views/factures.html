@@ -1,0 +1,60 @@
+<div ng-controller="facturesCtrl" js-modules>
+
+	 <div class="tab-content">
+
+	  <div class="tab-conteneurMessage">
+
+	   <!--////////////////////////  Colonnes ////////////////////////-->
+	              <table class="tab_commandes tableaux"  ng-app="factures" >
+
+	                      <tr>
+	                        <th>commande</th>
+	                        <th>
+	                         <div class="tab-triWrapper">
+	                             <div class="tab-tri"></div>
+	                             <div>Date</div>
+	                          </div>
+	                        </th>   
+	                        <th>
+	                          <div class="tab-triWrapper">
+	                             <div class="tab-tri"></div>
+	                             <div>Statut</div>
+	                          </div>
+	                        </th>
+	                        <th></th>   
+	                        <th></th>
+	                     </tr>
+	               
+	            <!--//////////////////////// Ligne commande ////////////////////////-->
+	                      <tr ng-show="!factures.length" class="no-data">
+	                        <td colspan="5" rowspan="5"><h2 class="listeVide">Aucune facture à afficher</h2></td>
+	                     </tr>
+	                    
+	                     <tr ng-repeat="facture in factures">
+	                         <td class="tab-blueImportant">{{facture.num_commande}}</td>
+	                         <td><p>{{ facture.date | date : 'yyyy-MM-dd'}}</p></td>    
+	                         <td class="tab-status">
+	                              <div class="tad-statutCartouche"><p>{{facture.statue}}</p></div>
+	                          </td>
+	                          <td class="tabVoir">
+	                            <div class="tab-conteneurAction js-popUp">
+	                                <span class="tab-iconVoir icone"></span>
+	                                <p ng-click='getInvoice(facture)'>Voir</p>
+	                            </div>
+	                          </td>
+	                           <td class="tabImprimer">
+	                              <div class="tab-conteneurAction">
+	                                <span class="tab-iconImprimer icone"></span>
+	                                <p>Imprimer</p>
+	                            </div>
+	                          </td>   
+	                      </tr>   
+
+	                     
+
+	               </table>
+
+	  </div>
+	</div>
+  <ng-include id="invoice_details" src="'modules/details_popup/view/popUpInfoSupFac.html'"></ng-include>   
+</div>

@@ -1,0 +1,126 @@
+
+
+
+<div class="l-contenu" js-modules>
+	    <div class="l-notification">
+	      	 <div class="messages"><span></span>Arrivage de 100 boîtes d’optisel à 10 00 $ offre valable jusqu’au 12/13/2014</div>
+	    	 <div x-clock class="clock"></div>
+	    </div>
+
+   <div class="l-block_principale" ng-controller="produitsCtrl">
+        <div class="m-listeProduit">
+           <h2 class="m-infoLargeTitre">Tous nos produits</h1>
+
+           <div class="litseProduit-Wrapper clearfix" >
+
+           <div ng-repeat="produit in produits" class="listerProd">
+
+              <div class="listeProduit-BlockProduit">
+                    <div class="listeProduit-image" ng-class"{produitPromotion : produit.promo!=0}">
+                          <div class="btnCartouche btnBlack listeProduitBtn">{{produit.forme}}</div>
+                          <img src="{{produit.photo}}" class="listeProduit-visuel" />
+                          <img class="listeProduit-fond mCS_img_loaded" src="../src/img/fondProduit.png">
+                          
+                    </div>
+                    <div class="listeProduit-info">
+                          <p class="listeProduit-DCI">{{produit.nom}} {{produit.dosage}}</p>
+                          <h3>{{produit.prix}} $</h3>
+                          <form  class="listeProduit-fomrAcheter">
+                            <div class="listeProduit-ajoutWrapper">
+                              <input type="number" value="0" ng-model="qty" class="listeProduit-quantitee" min="1" max="produit.qty"/>
+                              <input type="hidden" value="{{produit._id}}" name="prodId" ng-model="id"/>
+                              <input type="submit" value="Ajouter au pagnier" class="listeProduit-ajout" ng-click="addItem(produit._id, qty, produit.qty)"/>
+                            </div>
+                          </form>
+                    </div>
+              </div>
+
+              </div>
+
+            
+          </div>
+    </div>
+ </div>
+
+<!--//////////////////////// Panier ////////////////////////--> 
+
+                       <div class="l-blockRight">
+                         
+                          <div class="m-panier" ng-app="panier" ng-controller="panierCtrl" js-panier>
+
+                                <div class="panier-profile">
+ 									<img src="../src/img/img_panier.png" />
+                                      <div class="panier-resumer">
+                                            <h3>
+                                              Vous avez <span>{{productsPanier.length}} produit</span> dans votre panier
+                                            </h3>
+                                           
+                                            <hr></hr>
+                                            <div class="panier-totale clearfix">
+                                                <div class="panier-identifiant-wrapper">
+                                                    <h2>Total : <span> {{totalPanier() | number:2}} $</span></h2>
+                                                </div>
+                                            </div>
+                                      </div>
+                                  </div>
+
+                                   <div class="panier-listeWrapper">
+                                      <table class="panier-listeTAb">
+                                             <tr>
+                                                <th class="panier-tabColForme">Forme</th>
+                                                <th class="panier-tabColDCI">DCI/Forme</th>   
+                                                <th>Qte</th>
+                                                <th>
+                                                   <div class="tab-triWrapper">
+                                                     <div class="tab-tri"></div>
+                                                     <div>Prix</div>
+                                                  </div>
+                                                </th> 
+                                                <th>
+                                                   <div class="tab-triWrapper">
+                                                     <div class="tab-tri"></div>
+                                                     <div>Total</div>
+                                                  </div>
+                                                </th>   
+                                                <th>Suppr</th>
+                                             </tr>
+
+
+                                              <tr ng-show="!productsPanier.length" class="no-data">
+						                        <td colspan="5" rowspan="5"><h2 class="listeVide">Aucun produits dans le panier</h2></td>
+						                     </tr>
+                                             
+                                             <tr ng-class-odd="'panier-tabClair'" ng-class-even="''"  ng-repeat-start="productPanier in productsPanier">
+                                                 <td><p class="panier-tabCenterImage"><img src="{{productPanier.form_img}}"/></p></td>
+                                                 <td>
+                                                    <p class="panier-tabDCI">{{productPanier.nom}} {{productPanier.dosage}}</p>
+                                                    <p class="panier-tabForme">{{productPanier.forme}}</p>
+                                                 </td>   
+                                                 <td class="tab-qte">
+                                                    <form  class="panier-tabQte" name="panier-tab" action="#">               
+                                                          <input type="number" type="text" ng-change="qtyUpdate(productPanier._id, productPanier.qty_panier)" ng-model="productPanier.qty_panier"  min="1" max="productPanier.qty" input-pattern="[^0-9]+"/>
+                                                    </form>
+                                                 </td>
+                                                 <td class="YellowImportant" ng-model="productPanier.prix">{{productPanier.prix}}</td> 
+                                                 <td class="YellowImportant">{{productPanier.qty_panier * productPanier.prix}} $</td>   
+                                                 <td class="tabVoir">
+                                                    <span ng-click="removeProd(productPanier._id, $index)" class="tab-icoSuppr icone"></span>
+                                                  </td>
+                                              </tr>
+                                              <tr ng-repeat-end class="panier-tabMarge"><td></td><td></td><td></td><td></td><td></td><td></td></tr>   
+
+
+
+                                      </table>
+                                  </div>
+                                  <div class="panier-tabTotalWrapper">
+                                    <p class="panier-tabTotalLabel">Total : <span>{{totalPanier() | number:2}} $</span></p>
+                                    <div class="btn-solid" ng-click='validationPanier()'>Valider la commande</div>
+                                  </div>
+                                </div>
+                                 <img class="panier-bgProfile" src="../src/img/panierImageBig.png"/>
+                          </div>  
+                      </div>
+          </div>
+        </div>  
+</div>

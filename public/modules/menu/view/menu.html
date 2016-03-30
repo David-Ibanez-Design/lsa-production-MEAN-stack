@@ -1,0 +1,80 @@
+
+ 
+
+
+
+  <div class="l-menu" >
+
+          <!--//////////////////////// Logo ////////////////////////-->      
+            
+                <div class="m-logo">
+                   <span class="icone logo-iconeLogo"></span>
+                   <p class="logo_titre">Production</p>
+               </div>
+
+          <!--//////////////////////// Compte ////////////////////////-->   
+
+               <div class="m-compte">
+                  
+                      <div class="compte-image" >
+                        <div ng-app="notifications" ng-controller="notificationsCtrl">
+                         <a class="compte-circle" href="monCompte">
+                             <img src="../src/img/pharmacienHommeFiche.png" height="85" width="76"/>  
+                         </a>
+
+                         <a class="compte-notifInfo" href="monCompte" >
+                             <p class="compte-notifContenu">{{notifications.length}}</p>
+                         </a>
+                       </div>
+                       <div ng-controller="clientsCtrl">
+	                       <a class="compte-nom" href="monCompte" >{{clientsInfos.nom}}</a>
+	                      <!--<a  href="/login">Déconnection</a>-->
+                       </div>
+                
+                 </div>
+             </div>
+
+          <!--//////////////////////// Menu ////////////////////////-->
+
+           <ul class="m-menu" ng-controller="menuCtrl">
+              <li>
+                 <a ng-class="{menu_actif: isActive('/dashboard')}" class="menu-item" href="dashboard">
+                    <span class="menu-icone icon-home icone"></span>
+                    <span class="menu-borderActive"></span>
+                    <span class="menu-flecheActive"></span>
+                    <p>Dashboard</p>  
+                </a>
+            </li>
+            <li>
+               <a ng-class="{menu_actif: isActive('/commander')}" class="menu-item" href="commander" >
+                  <span class="menu-icone icon-caddie icone"></span>
+                  <span class="menu-borderActive"></span>
+                  <span class="menu-flecheActive"></span>
+                  <p>Commander</p>
+              </a>
+          </li>
+          <li>
+              <a ng-class="{menu_actif: isActive('/monCompte')}" class="menu-item" href="monCompte">
+                <span class="menu-icone icon-user icone"></span>
+                <span class="menu-borderActive"></span>
+                <span class="menu-flecheActive"></span>
+                <p>Mon compte</p>
+              </a>
+          </li>
+          <li>
+              <a ng-class="{menu_actif: isActive('/contact')}" class="menu-item" href="contact">
+                <span class="menu-icone icon-mail icone"></span>
+                <span class="menu-borderActive"></span>
+                <span class="menu-flecheActive"></span>
+                <p>Contact</p>
+             </a>
+          </li>
+      </ul>
+  </div>
+
+<div class="main-content" data-ui-view></div>
+
+
+
+
+

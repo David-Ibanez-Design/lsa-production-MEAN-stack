@@ -1,0 +1,67 @@
+<div ng-controller="commandesCtrl" js-modules>
+
+	 <div class="tab-content"  >
+
+	  <div class="tab-conteneurMessage">
+
+	   <!--////////////////////////  Colonnes ////////////////////////-->
+	       <table class="tab_commandes tableaux" >
+
+	              <tr example>
+	                <th>Commande</th>
+	                <th>
+	                 <div class="tab-triWrapper">
+	                     <div class="tab-tri" ></div>
+	                     <div>Date</div>
+	                  </div>
+	                </th>		
+	                <th>
+	                  <div class="tab-triWrapper">
+	                     <div class="tab-tri"></div>
+	                     <div>Statut</div>
+	                  </div>
+	                </th>
+	                <th>
+	                  <div class="tab-triWrapper">
+	                     <div class="tab-tri"></div>
+	                     <div>Montant</div>
+	                  </div>
+	                </th>		
+	                <th></th>
+	             </tr>
+	       
+	    <!--//////////////////////// Ligne commande ////////////////////////-->
+	             <tr ng-show="!commandes.length" class="no-data">
+	                <td colspan="5" rowspan="5"><h2 class="listeVide">Aucune commande à afficher</h2></td>
+	             </tr>
+	      
+
+	             <tr ng-repeat="commande in commandes">
+	                 <td class="tab-blueImportant">{{commande.num_commande}}</td>
+	                 <td><p>{{ commande.date | date : 'yyyy-MM-dd'}}</p></td>		
+	                 <td class="tab-status">
+	                    <div class="tab-conteneurStatus">
+	                      <div class="tab-barreStatus">
+	                        <div pos-statue></div>
+	                      </div>
+	                      <p>{{commande.statue}}</p>
+	                    </div>
+	                  </td>
+	                  <td class="BlackImportant">{{commande.total | currency:"$"}}</td>		
+	                  <td class="tabVoir" >
+	                    <div class="tab-conteneurAction js-popUp">
+	                        <span class="tab-iconVoir icone"></span>
+	                        <p ng-click="getOrder(commande)">Voir</p>
+	                    </div>
+	                  </td>
+	              </tr>    
+
+	     </table>
+
+	  </div>
+
+	</div>
+
+  <ng-include id='order' src="'modules/details_popup/view/popUpInfoSupOrder.html'"></ng-include>    
+
+</div>

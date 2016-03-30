@@ -1,0 +1,138 @@
+/* ======================
+   Layout/Module/infoSup
+   ======================= */
+
+.m-infoSup{
+	width:790px;
+	height:870px;
+	background: white;
+	@include centre(both);
+	z-index: 11;
+	display:none;
+
+	.infoSupFermer{
+		position:absolute;
+		right:30px;
+		top:0;
+		border:1px solid #364754;
+		border-top:none;
+		width:50px;
+		height:45px;
+		cursor: pointer;
+		&:hover{border:none;background:$yellow;}
+		&:hover .infoSupFermer-iconeClose{color:$black;}
+	}
+
+	.infoSupFermer-iconeClose{
+		@include icon( "before", croix);
+		@include centre(both);
+		font-size: 13px;
+		color:#364954;
+	}
+
+	.infoSupTitre{
+		text-align: center;
+		padding:0;
+		font-size: 25px;
+    	margin-top: 93px;
+    	color:#374a55;
+	}
+
+	.infoSupDate{
+		text-align: center;
+		margin-top:5px;
+		color:$blue;
+	}
+
+	.commandeEtapeIconAchat{
+
+	}
+
+	.infoSup-listeAction{
+		width:330px;
+		margin:0 auto;
+	}
+
+	.btn-yellow{
+		width:147px;
+		height:32px;
+		background:$yellow;
+		text-align: center;
+		color:$black;
+		cursor:pointer;
+		line-height: 32px;
+		float:left;
+		&:hover{background:$blue;}
+	}
+
+	.btn-dark{
+		width:147px;
+		height:32px;
+		background:#ccd8d3;
+		text-align: center;
+		color:#848b8c;
+		cursor:pointer;
+		line-height: 32px;
+		float:right;
+		&:hover{background:#afc2ba;}
+	}
+	
+	.panier-tabClair{
+		background:none !important;
+	}
+
+	th{
+		background:none !important;
+		height:38px !important;
+		color:#848b8c !important;
+		width:auto !important;
+	}
+
+	tr th{
+		border-bottom:3px solid #e5e5e5 !important;
+		
+	}
+
+	td{
+		color:#848b8c;
+	}
+
+	tr{
+		&:hover{background:none !important;}
+	}
+
+	.panier-tabDCI{
+		color:#848b8c !important;
+
+	}
+
+	.tab-infoSupPrix{
+		text-align: center;
+	}
+
+	.panier-tabMarge td{
+		background:#e5e5e5 !important;
+		text-align: center;
+	}
+
+	td.tab-qte{
+		color:#848b8c !important;
+		text-align: center;
+	}
+
+	.infoSupEtat{
+		text-align: center;
+		font-size: italic;
+		color:$dark-gray;
+		margin-top:35px;
+		margin-bottom: 35px;
+
+		span{
+			color:red;
+			font-size: 13px;
+		}
+	}
+
+}
+
+

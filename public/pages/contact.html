@@ -1,0 +1,87 @@
+
+
+<div class="l-contenu" >
+
+<!--///////////////// message d'erreur /////////////////////////-->
+
+   <div class="l-block_principale-contact">
+           <div id="form_erreur">
+                <p id="form_icon_erreur" class="icon-warning"></p>
+                <p id="form_erreur_message">
+                  <span>Oops, quelque chose n'a pas fonctionné</span><br>Les erreurs sont indiquée en rouge.Veuillez les corriger et renvoyer le formulaire.
+                </p>       
+            </div>
+            <div id="form_sucess">
+                <p id="form_sucess_message">Votre message a bien été envoyé</p>
+            </div>
+ <!--///////////////// FORM /////////////////////////-->   
+
+      <form action="include/validationForm.php" class="contact-form" contact>
+        <h2>Nous contacter</h2>
+        <div class="contact-formWrapper">
+           <div class="contact-formContenu">  
+
+    <!--//////////// sujet /////////////////-->
+
+                <div class="contact-formFiledWrapper">      
+                    <div class="contact-iconWrapper">
+                        <span class="icon_status icon-icon_form_sujet"></span>
+                        <div class="contact-triangle"></div>
+                        <div class="contact-triangle triangle-border"></div>
+                    </div>      
+                    <input type="text" id="sujet" class="formValid" placeholder="sujet" name="sujet" required="required"/>               
+               </div>
+
+          <!--//////////// email /////////////////-->   
+             
+               <div class="contact-formFiledWrapper">     
+                   <div class="contact-iconWrapper">
+                        <span class="icon_status icon-icon_form_email"></span>
+                        <div class="contact-triangle"></div>
+                        <div class="contact-triangle triangle-border"></div>
+                    </div>
+                   <input type="text" id="email"  class="formValid" placeholder="Email" name="email" required="required"/> 
+               </div>
+                 
+          <!--//////////// message /////////////////--> 
+                 
+                <div class="contact-formMessageWrapper contact-formFiledWrapper">       
+                    <div class="contact-iconWrapper">
+                        <span class="icon_status icon-icon_form_ecrire"></span>
+                        <div class="contact-triangle"></div>
+                        <div class="contact-triangle triangle-border"></div>             
+                    </div>
+                    <textarea type="text" id="message" class="formValid" placeholder="Message" name="message" required="required"></textarea>          
+                </div>
+                
+                <input type="submit" id="envoyer" value="ENVOYER"/>
+           
+          </div>
+        </div>
+      </form>
+
+<!--//////////// Info contact /////////////////-->
+      <div class="contact-info">
+
+          <div class="contact-infoAdresse">
+            <span class="icone iconeMap"></span>
+            <p>13 rue de la préfecture </br> 74000 Annecy</p>
+          </div>
+
+          <div class="contact-infoTel">
+            <span class="icone iconePhone"></span>
+            <p>04 76 78 65 09</p>
+          </div>
+
+          <div class="contact-infoFAx">
+            <span class="icone iconeFax"></span>
+            <p>04 76 78 37 43</p>
+          </div>
+        </div>
+
+   </div> 
+
+ 
+</div>
+
+<div  google-map id="map" ></div>  

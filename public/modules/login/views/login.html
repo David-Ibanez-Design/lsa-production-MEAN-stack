@@ -1,0 +1,47 @@
+
+<!--///////////////////// Mot de pass oublié /////////////////-->
+
+ <ng-include src="'modules/details_popup/view/popUpLogin.html'"></ng-include>
+
+<!--///////////////////// Logo /////////////////-->
+
+<div class="m-login" >
+
+        <div class="login-logoWrapper">
+           <div class="m-logoLogin">
+                  <span class="icone logo-iconeLogo"></span>
+                  <p class="logo_titre">Production</p>
+            </div>
+        </div>
+
+        <div class="credentalsHint">
+          <p>Login : test</p>
+          <p>Password : test</p>
+        </div>
+        <p ng-show="error" class="error-message">{{error}}</p>
+
+
+<!--///////////////////////////////// FORM ////////////////////////////////-->
+        <form  class="loginForm" ng-submit="logIn()" role="form" name="form">
+
+            <div class="login-formFildWrapper">
+              <span class="icone login-iconeIdentifiant"></span>
+              <input ng-model="username" required type="text" name="username" class="loginNom formValid" placeholder="Nom d’utilisateur" required>
+            </div>
+
+            <div class="login-formFildWrapper">
+              <span class="icone login-iconePass"></span>
+              <input name="password" ng-model="password" type="password" class="loginPass formValid" placeholder="Mot de passe" required>
+            </div>
+
+            <div class="login-formFildWrapper SubmitFiledWrapper">
+              <span class="icone login-iconeSubmit"></span>
+              <button type="submit" ng-disabled="form.$invalid || dataLoading" class="submit"></button>
+            </div>
+
+          <p class="login-forget">Mot de passe oublié ?   <a href="#" onclick="loginForget()"> cliquez ici </a> pour  le réinitialiser</p>
+
+        </form>
+
+  </div>
+

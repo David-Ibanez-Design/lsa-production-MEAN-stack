@@ -1,0 +1,191 @@
+/* ======================
+   Layout/Module/ficheClient
+   ======================= */
+
+.m-ficheClient{
+	padding-right: 45px;
+	position:relative;
+
+		.ficheClient-bgProfile{
+			 @include opacity(0.3);	
+			 @include position(absolute, -90px 0 0 50%);
+			 margin-left:-289.5px; 
+			 z-index: -1;
+			 width:579px;	
+		}
+
+		.ficheClient-titre{
+			color:white;
+			float:left;
+			font-family: $fontNormal;
+			 margin-top: 13px;
+		}
+
+		.ficheClient-EditerFiche{
+			float:right;
+			 margin-top: 13px;
+
+			.iconEditer{
+				  @include icon( "before", editer);
+				  font-size: 12px;
+				  margin-right: 5px; 
+			}
+		}
+
+
+/* ------------------- PROFILE ------------------*/		
+
+		.ficheClient-profile{
+			width:172px;
+			margin:0 auto;
+			padding-top: 78px;
+
+			.ficheClient-imageProfile{
+				@include shape(circle, 171px, white);
+				position:relative;
+				overflow:hidden;
+				margin:0 auto;
+			}
+
+			.ficheClient-reflet{
+				@include opacity(0.5);	
+				@include position(absolute ,  -39px 0 0 0px);
+				z-index:2;
+			}
+
+			.ficheClient-image{
+				min-height: 100%;
+				@include centre(both);
+			}
+
+			.ficheClient-identifiant{
+				text-align: center;
+				margin-top:50px;
+					
+			}
+
+			.ficheClient-Pseudo{
+				color:white;
+				font-family:$fontBold;
+				margin-bottom: 3px;
+			}
+
+			.ficheClient-nom{
+				color:$yellow;
+				font-size: 11px;
+				margin-bottom: 5px;
+			}
+
+			hr{
+				width:80%;
+				background:$gray;
+				height:2px;
+			}
+
+			.ficheClient-mdp{
+				margin-top:5px;
+				position:relative;
+				width:130px;
+				margin:0 auto;
+			}
+
+			.iconEditer{
+				color:$blue;
+				@include icon( "before", editer);
+				float:left;
+				font-size: 22px;
+			    margin-right: 9px;
+			    margin-top: 4px;
+			    position:absolute;
+			    left:0;
+			    z-index:3;
+			    &:hover{color:white;}
+			}
+
+			.ficheClient-identifiant-wrapper{
+				position:relative;
+			 }
+
+		 	.ficheClient-identifiantMdpLabel{
+				margin-bottom: 3px;
+				color:$dark-blue;
+			}
+			
+			.ficheClient-identifiantMdp{
+				color:$dark-blue;
+				text-align: center;
+				background:none;
+				border:none;
+			}
+
+			.ficheClient-identifiantValider{
+				display:none;
+				background:none;
+				width:80px;
+				margin: 9px auto;
+			}
+					
+		}
+
+
+
+/* ------------------- FORMULAIRE INFOS ------------------*/		
+
+
+		.ficheClient-info {
+			margin-top:48px;
+			height:423px;				
+		}
+
+		.ficheClientInfoContenu{
+			height:423px;
+		}
+
+		.ficheClient-infoEdit{
+			border-bottom:1px solid #606060 !important;	
+			font-style:italic;	
+			color:white !important;	
+		}	
+
+		.ficheClientInfoWrapper {
+			 padding-left: 16px;
+			width: 30%;
+			float:left;
+			
+		}
+
+		.ficheClientInfoLabel{
+			font-size: 12px;
+			color:$dark-blue;
+			display:block;
+			margin-bottom:2px;
+			text-align: center; 
+		}
+
+		.ficheClientInfoDetails{
+			display:block;
+			width:100%;
+			color:white;
+			background:none;
+			border:none;
+			text-align: center;
+			font-size: 13px; 
+			margin-bottom:22px;	
+			&:last-of-type{
+			margin-bottom:0px;
+		}	
+		
+	 }
+
+	 .ficheClientInfoValider{
+			background:none;
+			margin: 20px auto;
+			width:123px;
+			display:none;			
+		}
+
+}
+
+
+
+

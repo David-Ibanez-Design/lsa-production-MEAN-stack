@@ -1,0 +1,51 @@
+<h2 class="titireAdminPage">Tout les clients</h2>
+
+<!-- lister les clients
+choisir un clients
+on change afficher les commandes
+on ouvre la commande pour découvire les détails -->
+
+<div class="wrapper-content-admin" ng-init="documentTYpe='commande'">
+
+  <div class="lister_clients" ng-repeat="client in clients">
+    <input ng-click="showCommandes = ! showCommandes" type="checkbox" name="clients" value="{{client.nom}}">{{client.nom}}<br>
+
+    <div class="commande-choice" ng-repeat="commande in client.commandes" ng-show="showCommandes">
+
+      <input type="checkbox" ng-click="showCommandeDetails = ! showCommandeDetails" name="commandes" value="{{commande.num_commande}}">{{commande.num_commande}}<br>
+
+      <div class="commande-details" ng-show="showCommandeDetails">
+        <p  class="statue_com">{{commande.statue}}</p>
+        <select ng-model="selectedStatue" ng-options="statue.commande for statue in commandesStatue" class="selectStatue"></select>       
+        <div class="btn-apply" ng-click="changeStatue(selectedStatue.commande, commande.statue, commande._id, client._id, documentTYpe)">Apply changes</div>
+
+        <h2 ng-click="showCommandeProduits = ! showCommandeProduits"><span class="icon-plus"></span>Produits</h2>
+        <div class="productListAdmin" ng-show="showCommandeProduits">
+
+          <form novalidate class="commandes-form">
+            <div class="prod-list-admin" ng-repeat="produit in commande.produits" >
+              <label><input type="checkbox"  id="{{produit._id}}" ng-click="stateChanged(produit._id)"/>{{produit.nom}}</label>
+            </div>
+            <div class="btn-apply" ng-click="getProd(commande.num_commande, client._id)">Créer avoir</div>
+          </form>
+
+        </div>
+
+      <div class="lineSeparator"></div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+</div>
+<div class="lister_commande">
+  
+
+</div>
+
+  </body>
+    <div style='clear:both'></div>
+  </html>

@@ -1,0 +1,59 @@
+<div ng-controller="avoirssCtrl" js-modules>
+
+	 <div class="tab-content">
+
+	  <div class="tab-conteneurMessage">
+
+	   <!--////////////////////////  Colonnes ////////////////////////-->
+	       <table class="tab_commandes tableaux" ng-app="commandes" >
+
+	              <tr>
+	                <th>commande</th>
+	                <th>
+	                 <div class="tab-triWrapper">
+	                     <div class="tab-tri"></div>
+	                     <div>Date</div>
+	                  </div>
+	                </th>		
+	                <th>
+	                  <div class="tab-triWrapper">
+	                     <div class="tab-tri"></div>
+	                     <div>Statut</div>
+	                  </div>
+	                </th>		
+	                <th></th>
+	             </tr>
+	       
+	    <!--//////////////////////// Ligne commande ////////////////////////-->
+	              <tr ng-show="!avoirs.length" class="no-data">
+	                <td colspan="5" rowspan="5"><h2 class="listeVide">Aucun Avoir à afficher</h2></td>
+	             </tr>
+	      
+
+	             <tr ng-repeat="avoir in avoirs">
+	                 <td class="tab-blueImportant">{{avoir.num_commande}}</td>
+	                 <td><p>{{ avoir.date | date : 'yyyy-MM-dd'}}</p></td>		
+	                 <td class="tab-status">
+	                    <div class="tab-conteneurStatus">
+	                      <div class="tab-barreStatus">
+	                        <div class="tab-indicateurStatus" style="left:2%;"></div>
+	                      </div>
+	                      <p>{{avoir.statue}}</p>
+	                    </div>
+	                  </td>		
+	                  <td class="tabVoir">
+	                    <div class="tab-conteneurAction js-popUp">
+	                        <span class="tab-iconVoir icone"></span>
+	                        <p ng-click="getAvoir(avoir)">Voir</p>
+	                    </div>
+	                  </td>
+	              </tr>    
+
+	     </table>
+
+	  </div>
+	</div>
+
+	 <ng-include id="avoirs_details" src="'modules/details_popup/view/popUpInfoSupAvoir.html'"></ng-include>  
+
+</div>

@@ -1,0 +1,42 @@
+
+
+ @include font-face("icon", "../fonts/icon", $file-formats: eot woff ttf svg);
+
+$icons: (
+	
+	croix:"\ea0f",
+	triangle:"\ea1c",
+	connection:"\e612",
+	email:"\e600",
+	lock:"\e608",
+	phone:"\e609",
+	icon_planeInside:"\e60a",
+	icon_planeOutside:"\e60b",
+	supprimer:"\e60c",
+	graph:"\e601",
+	editer:"\e602",
+	caddie:"\e603",
+	dashboard:"\e604",
+	ecrir:"\e907",
+	carte:"\e94c",
+	user:"\e971",
+	warning:"\e610",
+	trait:"\e611",
+	graph_dot:"\e99b",
+	stats_bars:"\e99c",
+	logo:"\e605",
+	contact:"\e606",
+	compte:"\e607",
+	notification:"\e690",
+	imprimer:"\e699",
+	voir:"\e698",
+
+
+
+
+);
+
+
+
+
+

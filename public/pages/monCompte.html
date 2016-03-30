@@ -1,0 +1,197 @@
+
+
+<div class="l-contenu">
+
+  <div class="m-aplat"></div>
+
+	    <div class="l-notification">
+	      	 <div class="messages"><span></span>Arrivage de 100 boîtes d’optisel à 10 00 $ offre valable jusqu’au 12/13/2014</div>
+	    	 <div x-clock class="clock"></div>
+	    </div>
+
+   <div class="l-block_principale">
+
+    <div class="l-large_block" ng-app="notifications" ng-controller="notificationsCtrl">
+              <!--//////////////////////// Graph ////////////////////////-->
+               <div class="l-infoLarge">
+                  <div class="m-infoLargeConteneurTitre">
+                    <h2 class="m-infoLargeTitre"><span class="icone iconNotif"></span>Centre de notifications </h2>
+                  </div>
+                  <div class="tab-conteneurModif">
+                    <div class="m-infoLargeConteneur" >
+
+
+                          <table class="tab_notifications tableaux ">
+                              <tr class="tab-label">
+                                <th>
+                                   <div class="tab-triWrapper">
+                                     <div class="tab-tri"></div>
+                                     <div>Type</div>
+                                  </div>
+                                </th>
+                                <th>
+                                  <div class="tab-triWrapper">
+                                     <div class="tab-tri"></div>
+                                     <div>Priorité</div>
+                                  </div>
+                                </th>   
+                                <th>Date</th>
+                                <th>Message</th> 
+                                <th>voir</th>  
+                                <th></th>
+                             </tr>
+                       
+                    <!--//////////////////////// Ligne commande ////////////////////////-->
+                    		<tr style="height:7px;"></tr>
+                            <tr ng-class-odd="'tab-transparentbg'" ng-class-even="'tab-bg'"  ng-repeat-start="notification in notifications | filter: { nom: '!Information' } | limitTo:-8 ">
+                                 <td class="tab-greenNormal">{{notification.categorie}}</td>
+                                 <td><div class="notifPriorite {{notification.priorite}}">{{notification.priorite}}</div></td>   
+                                 <td class="yellowNormal">{{ notification.date | date : 'yyyy-MM-dd'}}</td>  
+                                 <td class="tab-notifMessage txtleft">{{notification.message}}</td>
+                                 <td class="tab-notifVoir js-popUp"  ng-click="openElement(notification)"><a href="#" >Plus de détails</a></td>
+                           </tr> 
+                           <tr ng-repeat-end style="height:7px;"></tr>
+
+                           
+                         
+                           
+                       </table>
+
+                     </div>
+                    </div>
+
+                 </div>
+          
+
+               <ng-include id="order_notif" src="'modules/details_popup/view/popUpInfoSupOrder.html'"></ng-include>  
+     </div>
+
+	<div class="wrapper-modules">
+	        <div class="panels" module  structure="tab" content="commandes,stocks"></div>
+	        <div class="panels-last" module  structure="tab" content="factures,avoirs,historiques"></div>
+	</div>
+
+</div>
+
+
+<!--//////////////////////// Block right ////////////////////////--> 
+
+
+                       <div class="l-blockRight " ng-controller="clientsCtrl" edit-client>
+                         
+                          <div class="m-ficheClient" >
+
+                                <h2 class="ficheClient-titre">Mes informations</h2>
+                                <div class="btnBlue btnCartouche ficheClient-EditerFiche"><span class="icone iconEditer"></span>EDITER</div>
+
+                                <div class="ficheClient-profile">
+                                      <div class="ficheClient-imageProfile">
+                                        <img src="../src/img/reflet.png" class="ficheClient-reflet"/>
+                                        <img src="../src/img/pharmacienHommeFiche.png" class="ficheClient-image"/>
+                                      </div>
+                                      <div class="ficheClient-identifiant">
+                                            <h3 class="ficheClient-Pseudo">{{clientsInfos.nom}}</h3>
+                                            <p class="ficheClient-nom">{{clientsInfos.nom_gerent}}</p>
+                                            <hr></hr>
+
+
+<!--//////////////////////// Form Mot de passe ////////////////////////--> 
+                                            <form class="ficheClient-mdp clearfix" action="#" >
+                                                <span class="icone iconEditer editerMp"></span>
+                                                <div class="ficheClient-identifiant-wrapper">
+                                                    <label class="ficheClient-identifiantMdpLabel">Mot de passe</label>
+                                                    <input class="ficheClient-identifiantMdp" value="Monmotdepasse" disabled="disabled" type="password"/>
+                                                    <input class="ficheClient-identifiantValider btnBlue btnCartouche" type="submit" value="Confimer"></input>
+                                                </form>
+
+
+                                        </div>
+                                  </div>
+                              </div>
+                                  
+
+<!--//////////////////////// Form Inf clients ////////////////////////--> 
+                                  <form name="ficheClientInfo" action="#" class="ficheClient-info clearfix" >
+                                    <div class="ficheClientInfoContenu">
+                                      <div class="ficheClientInfoWrapper">
+                                        <label class="ficheClientInfoLabel">BU</label>
+                                        <input type="text" class="ficheClientInfoDetails" ng-model="clientsInfos.BU" disabled="disabled" />
+
+                                        <label class="ficheClientInfoLabel">Commercial</label>
+                                        <input type="text" class="ficheClientInfoDetails" ng-model="clientsInfos.commercial" disabled="disabled"/>
+
+                                        <label class="ficheClientInfoLabel">Adresse Facturation</label>
+                                        <input type="text" class="ficheClientInfoDetails" ng-model="clientsInfos.adresse_fac" disabled="disabled"/>
+
+                                        <label class="ficheClientInfoLabel">Code Postal Facturation</label>
+                                        <input type="text" class="ficheClientInfoDetails" ng-model="clientsInfos.code_fac" disabled="disabled"/>
+
+                                        <label class="ficheClientInfoLabel">Ville Facturation</label>
+                                        <input type="text" class="ficheClientInfoDetails" ng-model="clientsInfos.ville_fac" disabled="disabled"/>
+
+                                        <label class="ficheClientInfoLabel">Ville</label>
+                                        <input type="text" class="ficheClientInfoDetails" ng-model="clientsInfos.ville" disabled="disabled"/>
+
+                                        <label class="ficheClientInfoLabel">Adresse Livraison</label>
+                                        <input type="text" class="ficheClientInfoDetails" ng-model="clientsInfos.adresse_livraison" disabled="disabled"/>
+                                      </div>
+
+                                      <div class="ficheClientInfoWrapper">
+                                        <label class="ficheClientInfoLabel">Tel</label>
+                                        <input type="text" class="ficheClientInfoDetails" ng-model="clientsInfos.tel" disabled="disabled"/>
+
+                                        <label class="ficheClientInfoLabel">Fax</label>
+                                        <input type="text" class="ficheClientInfoDetails" ng-model="clientsInfos.fax" disabled="disabled"/>
+
+
+                                        <label class="ficheClientInfoLabel">Email</label>
+                                        <input type="text" class="ficheClientInfoDetails" ng-model="clientsInfos.email" disabled="disabled"/>
+
+                                        <label class="ficheClientInfoLabel">Nom gérent</label>
+                                        <input type="text" class="ficheClientInfoDetails"  ng-model="clientsInfos.nom_gerent" disabled="disabled"/>
+
+                                        <label class="ficheClientInfoLabel">Tél Gérenat</label>
+                                        <input type="text" class="ficheClientInfoDetails"  ng-model="clientsInfos.tel_gerent" disabled="disabled"/>
+
+                                        <label class="ficheClientInfoLabel">Forme Juridique</label>
+                                        <input type="text"  class="ficheClientInfoDetails"  ng-model="clientsInfos.forme_juridique" disabled="disabled"/>
+                                      </div>
+
+                                      <div class="ficheClientInfoWrapper">
+                                        <label class="ficheClientInfoLabel">Ville Livraison</label>
+                                        <input class="ficheClientInfoDetails" ng-model="clientsInfos.ville_livraison" disabled/>
+
+                                        <label class="ficheClientInfoLabel">Registre de commerce</label>
+                                        <input class="ficheClientInfoDetails"  ng-model="clientsInfos.registre" disabled/>
+
+                                        <label class="ficheClientInfoLabel">Identité Fiscale</label>
+                                        <input class="ficheClientInfoDetails"  ng-model="clientsInfos.fiscale" disabled/>
+
+                                        <label class="ficheClientInfoLabel">Art Impôt</label>
+                                        <input class="ficheClientInfoDetails"  ng-model="clientsInfos.art_import" disabled/>
+
+                                        <label class="ficheClientInfoLabel">Remise</label>
+                                        <input class="ficheClientInfoDetails"  ng-model="clientsInfos.remise" disabled/>
+
+                                        <label class="ficheClientInfoLabel">Convention annuelle</label>
+                                        <input class="ficheClientInfoDetails"  ng-model="clientsInfos.convention_annuelle" disabled/>
+
+                                        <label class="ficheClientInfoLabel">Convention annuelle</label>
+                                        <input class="ficheClientInfoDetails"  ng-model="clientsInfos.convention_annuelle" disabled/>
+                                      </div>
+                               
+                                    </div>
+                                     <div  class="ficheClientInfoValider btnBlue btnCartouche" ng-click='updateClient(clientsInfos)'>Confimer</div>
+                                  </form>
+                                   <img class="ficheClient-bgProfile" src="../src/img/ficheClientImageBig.png"/>
+                                </div>
+                               
+                          </div>
+                      </div>
+            </div>
+        </div>  
+  </div>
+
+  </body>
+    <div style='clear:both'></div>
+  </html>

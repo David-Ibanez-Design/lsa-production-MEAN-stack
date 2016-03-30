@@ -1,0 +1,27 @@
+
+<div class="wrapper_notifications" ng-app="notifications" ng-controller="notificationsCtrl" js-modules>
+
+ <div class="tab-content">
+	<div class="tab-conteneurMessage">
+
+		<h2 ng-show="!notifications.length" class="listeVide">Aucun message à afficher</h2>
+  		<div ng-repeat="notification in notifications" class="notifications_wrapper">
+ 
+          <div class="tab-entete clearfix">
+                  <img src="{{notification.img}}" height="64" width="64" class="tab-img alignleft"/>
+                  <div class='tab-sousTitre alignleft'>
+                    <h3>{{notification.categorie}}</h3>
+                    <h4>{{notification.nom}}</h4>
+                  </div>
+              <span class="tab-grayNormal alignright verticalCenter">{{ notification.date | date : 'yyyy-MM-dd'}}</span>
+          </div>
+
+          <p class="tab-message clearfixDiv">{{notification.message}}</p>
+
+          <hr class="tab-separateur"></hr>
+
+        </div>
+    </div>
+   </div>
+</div>
+

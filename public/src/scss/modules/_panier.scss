@@ -1,0 +1,257 @@
+/* ==|====================
+   Layout/Module/ficheClient
+   ======================= */
+  		.panier-bgProfile{
+			 @include opacity(0.12);	
+			 @include position(absolute, 30px 0 0 82%);
+			 margin-left:-289.5px; 
+			 z-index: -1;
+			 width:579px;	
+		}
+
+.m-panier{
+	padding-right: 22px;
+	position:relative;
+
+
+
+		.panier-titre{
+			color:white;
+			float:left;
+			font-family: $fontNormal;
+			 margin-top: 13px;
+		}
+
+
+		.panier-profile{
+			width:236px;
+			margin:0 auto;
+			padding-top: 78px;
+			position:relative;
+
+			img{
+				display:block;
+				width:100px;
+				margin:0 auto;
+			}
+		
+		}
+
+
+		.panier-bgProfile{
+			 @include opacity(0.3);	
+			 @include position(absolute, -90px 0 0 50%);
+			 margin-left:-289.5px; 
+			 z-index: -1;
+			 width:579px;	
+		}
+
+/*  -------------------------------- STYLE RESUMER PANIER ------------------- */
+
+		.panier-resumer{
+			text-align: center;
+			margin-top:50px;
+				
+				h3{
+					color:white;
+					font-family:$fontBold;
+					margin-bottom: 3px;
+					font-size: 14px;
+
+					span{
+						color:$yellow;
+					}
+				}
+
+				.panier-nom{
+					color:$yellow;
+					font-size: 11px;
+					margin-bottom: 5px;
+				}
+
+				hr{
+					width:80%;
+					background:$gray;
+					height:2px;
+				}
+
+				.panier-totale{
+					margin-top:5px;
+					position:relative;
+					@include centre(x);
+				}
+
+				.panier-identifiant-wrapper{
+					float:left;
+						h2{
+							margin-bottom: 3px;
+							color:$dark-blue;
+							font-size:13px;
+							padding:0;
+
+								span{
+									color:white;
+								}
+						}
+						p{
+							color:$dark-blue;
+						}
+
+				 }
+		}
+
+
+/*  -------------------------------- STYLE LISTE PRODUIT ------------------- */
+
+
+	 	.panier-listeWrapper{
+		width: 100%;
+		margin-top: 70px;
+		//height:480px;
+		overflow:auto;
+		
+				.panier-listeTAb{
+					width:90%;
+					margin: 0 auto;
+				}
+
+				.panier-tabColForme{
+					width:113px;
+				}
+
+				.panier-tabColDCI{
+					//width:191px;
+				}
+
+				.panier-tabMarge{
+					width:100%;
+					
+					 td{
+					 	background:#0c1d32;
+					 	height:1px;
+
+					 }
+				}
+
+				th{
+					color:#6d7982;
+					font-size:13px;
+					font-family: $fontBold;
+					background:#1a2635;
+					height:59px;
+				}
+
+				tr{
+					&:hover {background:#000313;}
+				}
+
+				td{
+					color:white;
+					font-size:12px;
+					font-family: $fontNormal;
+					height:59px;
+				}
+
+				.panier-tabCenterImage{
+				 	text-align: center;	
+				 }
+
+				.panier-tabDCI{
+					color:white;
+				}
+
+				.panier-tabForme{
+					color:#526884;
+					font-size: 13px;
+					margin-top:2px;
+				}
+
+				.YellowImportant{
+					color:$yellow;
+					text-align: center;
+					font-size:1em; 
+				}
+
+
+				.panier-tabClair{
+					background:#263343;
+					cursor:pointer;
+				}
+
+				.tab-icoSuppr{
+					color:$blue;
+					text-align:center;
+					@include icon( "before", supprimer);
+					text-align: center;
+					font-size: 13px;
+					display: block;
+					&:hover{color:white;}
+				}
+
+				.panier-tabQte{
+					height:23px;
+					margin: 0 auto;
+					width: 41px;					
+
+						input{
+							float:left;
+							border-color:#14212f;
+							background:#14212e;
+							color:white;
+							text-align: center;
+							width:41px;
+							border:none;
+							height:100%;
+						}				
+				}
+
+				.panier-tabQteWrapper{
+					float:left;
+					height:97%;
+					cursor: pointer;
+					div{
+						width:13px;
+						height:50%;
+						background:#616e78;
+						border: 1px solid #0c1d32;
+						color:#0c1d32;
+						text-align:center;
+						line-height:13px;
+						font-family: $fontBold;
+					}		
+				}
+     }
+
+/*  -------------------------------- STYLE TOTAL PANIER ------------------- */
+
+	.panier-tabTotalWrapper{
+		clear:both;
+		width:90%;
+		height:58px;
+		background:#1a2635;
+		 margin-left: 5%;
+
+		.panier-tabTotalLabel{
+			
+			font-size: 18px;
+			font-family: $fontBold;
+			color:#6d7982;
+			width:60%;
+			float:left;
+			text-align:center;
+			margin-top: 24px;
+
+			span{
+				font-size: 22px;
+				color:white;
+			}
+		}
+
+		.btn-solid{
+			float:left;
+			margin-top: 16px;
+			width:40%;
+		}
+	}
+
+}

@@ -1,0 +1,82 @@
+/* ======================
+   Layout/Module/promotion
+   ======================= */
+
+.m-promotion{
+			height:211.8px;
+			margin-bottom:$margin;
+			background:url(../img/fond_promotion.png);
+			width:92%;
+			overflow:hidden;
+			position:relative;
+			&:last-of-type{margin-bottom:0;}
+				@include desktop {width:46% ;float:left;margin-bottom:25px;&:last-of-type{margin-bottom:0;}}
+				@include phone {width:100%;float:none;background:#2c89ab;}
+
+
+			.promo-imageProduit{
+					bottom: 40px;
+				    position: absolute;
+				    right: -53px;
+				    width: 38%;
+				    z-index:2;
+					@include phone {display:none;}
+			}
+
+			.shadow{
+				position:absolute;
+				right:-60px;
+				bottom:-28px;
+				z-index:1;
+				@include phone {display:none;} 
+			}
+
+			.promo-image_forme{
+				@include position(absolute , 0 0 0px 0px);
+				@include phone {display:none;} 
+			}
+
+			.promo-bandeau {
+			    border-color: $yellow transparent transparent;
+			    border-style: solid;
+			    border-width: 107px 107px 0 0;
+			    font-family: $fontBold;
+			    font-size: 22px;
+			    height: 0;
+			    position: relative;
+			    text-align: center;
+			    width: 0;
+
+			    	span {
+			    		@include position(absolute , -82px 0 0px 31px);
+					    transform: rotate(317deg);
+					}
+				}
+
+			.promo-nom{
+				color:white;
+				margin-top: -46px;
+    			text-align: center;
+    			margin-bottom: 18px;
+			}	
+
+			.promo-sousTitre {
+			    color:white;
+			    font-size: 14px;
+			    margin-top: 3px;
+			    text-align: center;
+			}
+
+			.promo-liens {
+			    color: #0b182b;
+			    display: block;
+			    font-size: 16px;
+			    margin: 29px auto;
+			    position: relative;
+			    text-align: center;
+			    width: 200px;
+			    z-index: 10;
+			    &:hover{color:white;}
+			}
+
+		}

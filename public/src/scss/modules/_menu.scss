@@ -1,0 +1,89 @@
+/* ==|====================
+   Layout/Module/menu
+   ======================= */
+
+
+   .m-menu{
+            @include tablet {  float:right;}
+
+         li{ @include tablet {float:left}}
+        
+        .menu-item{
+             border-bottom: 2px solid #33424c;
+             height: 100px;
+             width: 100%;
+             cursor: pointer;
+             display: block;
+             position: relative;
+             text-align: center;
+
+              @include tablet {height: 60px;width: 100px;border-right: 2px solid #33424c;}
+
+                .menu-icone{
+                     color:$gray;
+                     line-height: 96px;
+                     @include tablet { line-height: 64px;}
+                    font-size: 32px;
+                    display:block;
+                   
+                }
+
+                .icon-home{@include icon( "before", dashboard);}
+                .icon-caddie{@include icon( "before", caddie);}
+                .icon-user{@include icon( "before", compte);}
+                .icon-mail{@include icon( "before", contact);font-size: 20px;}
+
+            p{
+                color: $gray;
+                font-size: 14px;
+                line-height: 57px;
+                display:none;
+            }
+        } 
+
+        .menu-item:hover .menu-icone{ color:$blue;}
+        
+        .menu_actif  .menu-icone{
+            line-height: 0 !important;
+            padding-top: 37px;color:$blue;
+            
+              @include tablet {padding-top: 32px;}}
+
+        .menu_actif .menu-borderActive , .menu_actif .menu-flecheActive  , .menu_actif p{display:block;}
+
+        .menu_actif p{@include tablet {display:none;}}
+
+        .menu-borderActive{
+            height: 104%;
+            width: 2px;
+            background: none repeat scroll 0 0 #ccce37;
+            display:none;
+            @include position(absolute, -2px 0 0 0px);
+
+              @include tablet {   height: 2px;left: 0;top: 0;width: 100%;}
+        }
+
+        .menu-flecheActive{
+              background: url("../img/fleche_menu_over.png") repeat;
+              height: 22px;
+              @include position(absolute, 50% -12px 0 0);
+              width: 12px;
+              display:none;
+              margin-top: -9px;
+              z-index: 3;
+
+              @include tablet {  background: url("../img/fleche_bas.png"); top:auto; bottom: -12px;height: 12px;margin-right: -11px;right: 50%;width: 22px;}
+        }
+
+
+        .menu_actif{
+           background: url("../img/fond_menu_hover.png") repeat;
+           box-shadow: 3px 7px 7px -3px rgba(0, 0, 0, 0.29);
+        }
+
+
+
+   }
+
+
+

@@ -1,0 +1,234 @@
+/* ==|====================
+   Layout/Module/contactFrom
+   ======================= */
+
+.l-block_principale-contact{
+	background:url(../img/fondContact.png);
+	// @include box-shadow (rgba(0, 0, 0, 0.4) 18px 0px 38px 0px);
+	position: relative;
+	padding-bottom: 145px;
+    z-index: 2;
+
+    	.contact-form{
+			height:470px;
+			width:566px;
+			// @include box-shadow(rgba(black, 0.75) 2px -1px 9px 1px);
+			margin:134px auto 0;
+		
+			h2{
+				background:#21313b;
+				height:83px;
+				line-height: 83px;
+				color:white;
+				text-align: center;
+				margin:0;
+				position:relative;
+				z-index: 2;
+				font-size: 24px;
+				font-family:$fontNormal;
+			}
+
+			.contact-formWrapper{
+				height:389px;
+				border:1px solid #788090;
+				background:url(../img/fond_formInput.png);
+				margin-top: -3px;
+			}
+
+			.contact-formContenu{
+				width:361px;
+				margin:36px auto;
+			}
+
+			/*//////// champs ////////////*/
+
+			.contact-formFiledWrapper {
+				margin-top: 20px;
+				clear:both;
+				height: 40px;
+				@include border-radius(5px);
+			}
+
+			.contact-formMessageWrapper {height:138px;}
+
+			#email, #sujet {
+				height: 38px;
+				line-height: 35px;
+				float:left;
+			}
+
+			input[type="text"], textarea{
+				background: none repeat scroll 0 0 white;
+				border: 1px solid #bcbcbc;
+				color:#373737;
+				width:100%;
+				height:38px;
+				text-align: center;
+				@include border-radius(7px);
+			}
+
+			textarea { 
+				height: 138px;
+				line-height: 35px;
+			}
+
+			input[type="submit"] {
+				background: none repeat scroll 0 0 $yellow;
+				color: #22333e;
+				cursor: pointer;
+				font-size: 13px;
+				height: 39px;
+				margin-top: 20px;
+				width: 100%;
+				line-height: 39px;
+				font-family:$fontBold;
+				border: medium none;
+				@include border-radius(5px);
+
+				 	&:hover{
+						background: none repeat scroll 0 0 white; 
+					}
+
+				}
+
+				/*//////// Icon ////////////*/
+
+
+				.icon_status{
+					font-size:14px;
+					color:white;
+					@include centre(x);
+					top:10px;	
+				}
+
+
+				.icon-icon_form_ecrire {
+					@include icon( "before", ecrir);	
+				}
+				.icon-icon_form_email {
+					@include icon( "before", email);
+				}
+				.icon-icon_form_message {
+					@include icon( "before", ecrir);
+				}
+				.icon-icon_form_sujet {
+					@include icon( "before", user);
+				}
+				.icon-warning {
+					@include icon( "before", warning);
+				}
+
+
+				.contact-iconWrapper{
+					float:left;
+					margin-right: -46px;
+					position:relative;
+					height:100%;
+					width:38px;	
+					margin-left: 1px;
+					margin-top: 1px;
+					background:#5c698e;
+					// @include border-top-left-radius(5px);
+					// @include border-bottom-left-radius(5px);
+
+				}
+
+				.contact-triangle{
+					@include shape(triangle,6px,#bcbdc3);
+					margin-top:14px;
+					float:right;
+					margin-right: -11px;
+					@include transform (rotate(90deg));
+
+				}
+
+				.triangle-border{
+					@include shape(triangle,6px,#5c698e);
+					margin-top:14px;
+					float:right;
+					margin-right: -10px;
+					@include transform (rotate(90deg));
+				}
+
+
+
+		}
+
+
+	/*//////// Info contact ////////////*/
+
+	.contact-info{
+		width:566px;
+		margin:0 auto;
+		margin-top: 70px;
+		overflow:hidden;
+		text-align: center;
+
+		div{
+			width:28%;
+			float:left;
+			margin-right:45px;
+			&:last-of-type{margin-right:0px;}
+		}
+
+		.icone{font-size: 23px;color:$blue;display:block;}
+
+
+		.iconeMap{@include icon( "before", carte);}
+
+		.iconePhone{@include icon( "before", phone);}
+
+		.iconeFax{@include icon( "before", imprimer);}
+
+		p{
+			color:white;
+			font-family:$fontNormal;
+			font-size: 13px;
+			margin-top: 17px;
+		}
+			
+    }
+
+
+}
+/*////////Affichage erreur////////////*/
+
+#form_erreur,#form_sucess{
+	width:100%;
+	margin:0 auto;
+	font-family:arial;
+	text-align:center;	
+	padding:10px;
+	display:none;
+	height:109px;
+	position:absolute;
+	top: 15px;
+}
+
+#form_icon_erreur{
+	color:#b30818;
+	font-size:35px;		
+}
+
+#form_erreur_message{
+	font-size:14px;
+	padding:10px;
+	color:#b30818;	
+}
+
+#form_sucess_message{
+	font-size: 20px;
+	font-weight: bold;
+	padding:10px;
+	color:#4cd81b;
+	line-height: 109px;
+	margin: 0 auto 0 16px;	
+}
+
+#form_erreur_message span{
+	font-size: 20px;
+	font-weight: bold;	
+}
+
+			
+

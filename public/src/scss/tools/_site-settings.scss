@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+// ----------------------
+// == Site settings
+// ----------------------
+
+
+
+// ----------------------------- Fonts ----------------------------- //
+
+$fontLight:"MyriadPro-Light", Helvetica, Arial, sans-serif;
+$fontNormal: "MyriadPro-Regular", Helvetica, Arial, sans-serif;
+$fontBold: "MyriadPro-Bold", Helvetica, Arial, sans-serif;
+$fontBoldComd:"MyriadPro-BoldCond", Helvetica, Arial, sans-serif;
+
+// ----------------------------- Colors ----------------------------- //
+
+$black:#374850;
+$dark-gray:#848c8f;
+$gray:#848b8c;
+$light-gray:#e5e5e5;
+$yellow:#f8e61d;
+$blue:#0c9de5;
+$darker-blue:#374850;
+$dark-blue:#6a7e98;
+$dark-green:#233a3b;
+$green:#006633;
+$light-green:#00ff36;
+$light-red:#c13838;
+$dark-red:#990000;
+$green-gray:#ccd8d3;
+
+//tabs
+$color-tab:$green-gray;
+
+//text
+$color-text: $gray;
+
+// Titre
+$color-title: $black;
+$color-title-sous-titre: $gray;
+
+// link
+$color-link: $blue;
+$color-link-hover: darken($color-link, 10%);
+
+// Mixin Placeholder
+$color-mixin-placeholder: $light-gray;
+
+// Selection
+$color-selection: orange;
+
+
+// fond gradiant
+@mixin color-tab-graph-light() {
+	$svg-gradient-shim-threshold: 1 !global;
+	// @include background-image(linear-gradient(45deg, #8ca9b6 1%, #50707f 100%));
+}
+
+@mixin color-tab-graph-light_hover() {
+	$svg-gradient-shim-threshold: 1 !global;
+	// @include background-image(linear-gradient(45deg, #7b98a5 1%, #40606f 100%));
+}
+
+@mixin color-tab-graph-dark() {
+	$svg-gradient-shim-threshold: 1 !global;
+	// @include background-image(linear-gradient(to right, #192e3f, #081428));
+}
+
+// fond aplat
+$onglet_slide:#ccd8d3;
+$onglet_slide_hover:#848c8f;
+
+
+
+
+
+
+

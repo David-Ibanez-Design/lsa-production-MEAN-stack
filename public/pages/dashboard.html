@@ -1,0 +1,92 @@
+<!--///////////////////////////////// CONTENU ////////////////////////////////--> 
+  
+
+<div class="l-contenu">
+
+    <div class="m-aplat"></div>
+
+	    <div class="l-notification">
+	      	 <div class="messages"><span></span>Arrivage de 100 boîtes d’optisel à 10 00 $ offre valable jusqu’au 12/13/2014</div>
+	    	 <div x-clock class="clock"></div>
+	    </div>
+
+	    <div class="l-block_principale" graph>
+
+	      <div class="l-large_block">
+
+	              <!--//////////////////////// Graph ////////////////////////-->
+	              <div class="l-infoLarge m-graph_contneur">    
+	                      <div class="m-infoLargeConteneurTitre">
+	                        <h2 class="m-infoLargeTitre"><span class="icone iconeGraph"></span> Objectifs / Convertions </h1>
+	                        <div class="btnCartouche btnWhite m-infoLargePeriode">MENSUEL</div>
+	                      </div>
+	                      <div class="m-infoLargeConteneur">                
+	                         <!--  <h2 class="m-infoLargeMessage">Aucune donées à afficher</h2>-->
+	                          <div class="m-graph">
+	                            <canvas class="myChart" id="Annuel"></canvas>
+	                            <canvas class="myChart" id="Mensuel"></canvas>
+	                            <canvas class="myChart" id="Trimestriel"></canvas>
+
+	                      </div>
+	                   </div>
+	              </div>
+
+	               <div class="graph_sidebar" >
+	                    <div class="graph-tab graph-tab_active" data-type="Mensuel">
+	                         <p>Mensuel</p>
+	                         <h3>20 000 DA</h3>
+	                         <div class="graph-tabPourcentWrapper">
+	                            <div class="icone sensPourcentPlus"></div>
+	                            <div class="graph-tabPourcent">12%</div>
+	                          </div>
+	                     </div>
+
+	                     <div class="graph-tab" data-type="Trimestriel">
+	                           <p>Trimestriel</p>
+	                           <h3>100 000 DA</h3>
+	                           <div class="graph-tabPourcentWrapper">
+	                              <div class="icone sensPourcentPlus"></div>
+	                              <div class="graph-tabPourcent">60%</div>
+	                          </div>
+	                     </div>
+	                          
+
+	                     <div class="graph-tab" data-type="Annuel">
+	                           <p>Annuel</p>
+	                           <h3>600 000 DA</h3>
+	                           <div class="graph-tabPourcentWrapper">
+	                              <div class="icone sensPourcentMoin"></div>
+	                              <div class="graph-tabPourcent graph-tabMoin">10%</div>
+	                           </div>
+	                     </div> 
+	                </div> 
+	        </div>
+
+		<div class="wrapper-modules">
+		        <div class="panels" module  structure="tab" content="commandes"></div>
+		        <div class="panels-last" module  structure="tab"  content="messages,historiques"></div>
+		</div>
+	          
+	  </div>
+
+		<!--//////////////////////// Promotions ////////////////////////--> 
+
+
+	         <div class="l-blockRight" ng-controller="produitsCtrl">
+
+	              <div class="m-promotion"  ng-class-even="'margleft'" ng-repeat="promo in promos">
+	                    <div class="promo-bandeau"><span>-{{promo.promo}}%</span></div> 
+	                    <h1 class="promo-nom">{{promo.nom}}</h1>
+	                    <p class="promo-sousTitre">{{promo.prescription}}</p>
+	                    <a class="promo-liens" href="#">J'en profite</a>
+	                    <img src="{{promo.photo}}" class="promo-imageProduit"/>
+	                    <!--<img src="{{promo.form_img}}" class="promo-image_forme"/>-->
+	                    <img class='shadow' src="../src/img/promo_shadow.png"/>   
+	              </div>
+
+	        </div>
+
+
+	</div>	
+
+</div>

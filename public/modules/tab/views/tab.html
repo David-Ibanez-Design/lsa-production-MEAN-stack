@@ -1,0 +1,15 @@
+
+<section class="m-tabs" ng-controller="TabCtrl">
+
+      <ul>
+            <li ng-repeat="name in TabsData" ng-class="{active:isSet($index)}">
+                <h2 ng-click="setTab($index)">{{name}}</h2>
+                
+            </li>
+      </ul>    
+        
+       <div  ng-show="isSet($index)" ng-repeat="data in TabsData" ng-include src="'modules/' + data + '/views/' + data + '.html'"></div>
+
+
+</section>
+

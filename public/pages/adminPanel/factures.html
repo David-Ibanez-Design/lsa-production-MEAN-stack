@@ -1,0 +1,24 @@
+  <h2 class="titireAdminPage">Tout les clients</h2>
+
+  <div class="wrapper-content-admin" ng-init="documentTYpe='facture'">
+
+    <div class="lister_clients" ng-repeat="client in clients">
+      <input ng-click="showFactures = ! showFactures" type="checkbox" name="clients" value="{{client.nom}}">{{client.nom}}<br>
+
+      <div class="commande-choice" ng-repeat="facture in client.factures" ng-show="showFactures">
+
+        <input type="checkbox" ng-click="showFacturesDetails = ! showFacturesDetails" name="factures" value="{{facture.num_commande}}">{{facture.num_commande}}<br>
+        <div class="commande-details" ng-show="showFacturesDetails">
+           <p class="statue_com">{{facture.statue}}</p>
+           <select ng-model="selectedStatue" ng-options="statue.facture for statue in facturesStatue" class="selectStatue"></select>       
+          <div class="btn-apply" ng-click="changeStatue(selectedStatue.facture, facture.statue, facture._id, client._id, documentTYpe)">Apply changes</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  </body>
+    <div style='clear:both'></div>
+  </html>

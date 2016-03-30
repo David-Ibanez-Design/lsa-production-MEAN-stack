@@ -1,0 +1,50 @@
+<div class="m-infoSup">
+    <div class="infoSupFermer">
+      <span class="icone infoSupFermer-iconeClose"></span>
+    </div>
+    <h2 class="infoSupTitre">Commande n°{{lineOrder.num_commande}}</h2>
+    <p class="infoSupDate">{{ lineOrder.date | date : 'yyyy-MM-dd'}}</p>
+    <div class="infoSup-etatCommande">
+      
+      <div class="commandeEtape etape1">
+        <span class="commandeEtapeIcon icon-caddie icone"></span>
+       
+      </div>
+    </div>
+    <div class="m-panier">
+      <div class="panier-listeWrapper">
+        <table class="panier-listeTAb">
+               <tr>
+                  <th class="panier-tabColForme">Forme</th>
+                  <th class="panier-tabColDCI">DCI/Forme</th>   
+                  <th>Qte</th>
+                  <th>
+                     <div class="tab-triWrapper">
+                       <div class="tab-tri"></div>
+                       <div>Prix</div>
+                    </div>
+                  </th>   
+               </tr>
+
+
+               
+               <tr class="panier-tabClair" ng-repeat-start="produits in lineOrder.produits">
+                   <td><p class="panier-tabCenterImage"><img src="{{produits.form_img}}"/></p></td>
+                   <td>
+                      <p class="panier-tabDCI">{{produits.nom}} {{produits.dosage}}</p>
+                      <p class="tab-blueImportant">{{produits.forme}}</p>
+                   </td>   
+                   <td class="tab-qte">{{produits.qty}}</td>
+                   <td class="tab-BlackImportant tab-infoSupPrix">{{produits.prix}} $</td>    
+                </tr>   
+                <tr ng-repeat-end class="panier-tabMarge"><td></td><td></td><td></td><td></td><td></td></tr>
+              
+        </table>
+    </div>
+    </div>
+    <p class="infoSupEtat">Cette commande est actuellement  <span>{{lineOrder.statue}}</span></p>
+    <div class="infoSup-listeAction">
+      <div class="btn btn-yellow">MODIFIER</div>
+      <div class="btn btn-dark">ANNULER</div>
+    </div>
+  </div>

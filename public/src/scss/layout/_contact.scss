@@ -1,0 +1,36 @@
+/* ==|====================
+   Layout/Contact
+   ======================= */
+  $taille_reference:1920px;
+  $margin-contenu:55px;
+  $graph:1160px;
+  $contenu:$taille_reference - $menu;
+  $block-principale:$graph - $margin-contenu;
+  $block-map:$contenu - $block_principale;
+
+
+
+.l-block_principale-contact {
+				width:percentage($block_principale/$contenu);
+				height:100%;
+				float:left;
+					@include desktop {width:100%;}
+			}
+
+.l-blockRight-contact {
+	width:percentage(($block-map)/$contenu);
+	float:left; 
+	height:100%;
+	z-index:10;
+		@include desktop {width:100%;}
+		@include phone {width:100%;}	
+}
+
+
+
+
+
+
+
+
+

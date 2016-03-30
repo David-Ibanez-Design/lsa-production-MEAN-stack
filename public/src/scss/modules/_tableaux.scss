@@ -1,0 +1,178 @@
+/* ==|====================
+   Layout/Module/tableaux
+   ======================= */
+
+/*  -------------------------------- STYLE TABLEAUX TRI ------------------- */
+
+.tableaux{
+	width:100%;	
+}
+
+
+	.tab-triWrapper{
+				display: inline-block;
+				vertical-align: middle;
+			    /* for ie6/7: */
+			    *display: inline;
+			    zoom: 1;
+				&:hover div{color:$blue;}
+				&:hover{cursor:pointer;}
+				div{
+       				float:left;
+    			}
+			}
+	 
+
+		.clicked{
+					div{color:$blue;}
+				}
+
+
+/*  -------------------------------- STYLE TABLEAUX COMMANDES ------------------- */
+
+.tab_commandes {
+
+	.no-data:hover{
+		background: none !important;
+	}
+
+	th{
+		height: 28px;
+		border-bottom: 3px solid $light-gray;
+		text-align: center;
+	}
+
+	td{
+		border-bottom: 1px solid #e5e5e5;
+    	height: 78px;
+    	text-align: center;
+   		vertical-align: middle;
+   		font-size: 15px;
+	}
+
+	tr:not(:first-child){
+		&:hover{background:#fffde8;}
+	}
+
+
+
+	
+}
+/*  -------------------------------- STYLE TABLEAUX ------------------- */
+	.tab-content{
+		height:380px;
+		padding-top: 10px;
+	}
+
+
+	
+
+	.tab-barreStatus{
+		background: none repeat scroll 0 0 #ccd8d3;
+	    height: 5px;
+	    margin: 0 auto 8px;
+	    position: relative;
+	    width: 81%;
+	}
+
+	.tab-indicateurStatus {
+	    background: none repeat scroll 0 0 $yellow;
+	    border: 1px solid #f5f7fa;
+	    height: 9px;
+	    position: absolute;
+	    top: -3px;
+	    width: 9px;
+	}
+
+	.tad-statutCartouche{
+		padding: 3px 17px;
+		border:1px solid #8b9496;
+		@include border-radius(5px);
+		display:inline-block;
+		line-height:18px;
+	}
+
+	.tab-conteneurAction{
+		cursor:pointer;
+		min-width: 42px;
+	}
+
+	.tab-iconVoir{
+		@include icon( "before", voir);
+	}
+
+	.tab-iconImprimer{
+		@include icon( "before", imprimer);
+	}
+
+	.tab-voir p{
+ 		margin-top: 6px;
+ 		color:#b6bcbe;
+ 	}
+
+	.tab-conteneurAction:hover p, .tab-conteneurAction:hover:hover span {
+		color:$blue;
+	}
+
+
+/*  -------------------------------- STYLE TAB MESSAGES ------------------- */
+.notifications_wrapper:not(:first-child){
+	margin-top:20px;
+}
+
+
+.tab-entete{
+	width:95%;
+	height:64px;
+
+}
+
+.tab-iconNotif{
+	@include icon( "before", notification);
+	@include vertical-align(50%);
+	font-size:28px; 
+}
+
+.m-tabs .notifPriorite{
+	margin-top:3px;
+	color:white;
+	text-align: center;
+	font-size: 11px;
+	@include border-radius(25px);
+}
+
+.tab-grayNormal{
+	color: $gray;
+    font-family: $fontNormal;
+    font-size: 13px;
+	position:relative;
+	@include vertical-align(37%);
+}
+
+.tab-sousTitre{
+	@include vertical-align(50%);
+	margin-left: 10px;
+
+    h3{
+    	color:$darker-blue;
+    }
+    h4{
+    	font-style: italic;
+    }
+}
+
+.tab-message{
+	clear: both;
+	margin: 12px auto 0;
+    width: 90%;
+}
+
+.tab-separateur{
+	width:90%;
+	margin:0 auto;
+	height:1px;
+	background: $light_gray;
+	margin-top:22px;
+}
+
+
