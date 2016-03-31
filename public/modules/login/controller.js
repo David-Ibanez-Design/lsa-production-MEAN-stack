@@ -1,6 +1,6 @@
 angular.module('login')
 
-.controller('LoginCtrl',['$scope', '$rootScope', '$location', 'AuthenticationService', function ($scope, $rootScope, $location, AuthenticationService) {
+.controller('LoginCtrl',['$scope', '$rootScope', '$location', 'AuthenticationService', '$window', function ($scope, $rootScope, $location, AuthenticationService, $window) {
         // reset login status
         AuthenticationService.ClearCredentials();
 
@@ -11,9 +11,11 @@ angular.module('login')
 
                 if(response.success) {
 
+
                     AuthenticationService.SetCredentials($scope.username, $scope.password, $scope, response);
 
-                    $location.path('/dashboard');
+                    //$location.path('/dashboard');
+                    $window.location.assign('/dashboard');
 
                 } else {
 

@@ -16,7 +16,7 @@ var router = express.Router();
 var db = require('./config/db');
 //"mongodb://<user>:<password>@paulo.mongohq.com:10095/mean-on-heroku",
 // set our port
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 8080;
 
 // connect to our mongoDB database
  mongoose.connect(db.url);

@@ -2504,7 +2504,7 @@ input:focus:invalid, textarea:focus:invalid {
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    top: 63%; }
+    top: 324px; }
 
 /* ==|====================
    Layout/Module/formPassOublie
